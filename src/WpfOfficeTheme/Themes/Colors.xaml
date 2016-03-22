@@ -1,0 +1,22 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!--Common colors-->
+    <Color x:Key="ForegroundColor">#333</Color>
+    <Color x:Key="BackgroundColor">#fff</Color>
+    <Color x:Key="BorderColor">#D4D4D4</Color>
+    <Color x:Key="Disabled.BackgroundColor">#FFF4F4F4</Color>
+    <Color x:Key="Disabled.BorderColor">#FFADB2B5</Color>
+    <Color x:Key="Disabled.ForegroundColor">#FF838383</Color>
+
+    <SolidColorBrush x:Key="ForegroundBrush" Color="{StaticResource ForegroundColor}"/>
+        <!--Button colors-->
+    <SolidColorBrush x:Key="Button.Static.Background" Color="{StaticResource BackgroundColor}"/>
+    <SolidColorBrush x:Key="Button.Static.Border" Color="{StaticResource BorderColor}"/>
+    <SolidColorBrush x:Key="Button.MouseOver.Background" Color="{DynamicResource MouseOver.BackgroundColor}"/>
+    <SolidColorBrush x:Key="Button.MouseOver.Border" Color="{DynamicResource MouseOver.BorderColor}"/>
+    <SolidColorBrush x:Key="Button.Pressed.Background" Color="{DynamicResource Pressed.BackgroundColor}"/>
+    <SolidColorBrush x:Key="Button.Pressed.Border" Color="{DynamicResource Pressed.BorderColor}"/>
+    <SolidColorBrush x:Key="Button.Disabled.Background" Color="{StaticResource Disabled.BackgroundColor}"/>
+    <SolidColorBrush x:Key="Button.Disabled.Border" Color="{StaticResource Disabled.BorderColor}"/>
+    <SolidColorBrush x:Key="Button.Disabled.Foreground" Color="{StaticResource Disabled.ForegroundColor}"/>
+</ResourceDictionary>

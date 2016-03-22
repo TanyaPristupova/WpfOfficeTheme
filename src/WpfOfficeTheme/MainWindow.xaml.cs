@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
-using System.ComponentModel;
 using System.Windows;
+using System.Windows.Media;
 
 namespace WpfOfficeTheme
 {
@@ -9,11 +9,10 @@ namespace WpfOfficeTheme
     /// </summary>
     public partial class MainWindow : Window
     {
-        public List<User> Users { get; set; }
-
         public MainWindow()
         {
             InitializeComponent();
+
             Users = new List<User>
             {
                 new User {Id = 1, Name = "John", PhoneNumber = 777666880},
@@ -32,6 +31,15 @@ namespace WpfOfficeTheme
             ListView.ItemsSource = Users;
             DataGrid.ItemsSource = Users;
             DataGrid1.ItemsSource = Users;
+        }
+
+        public List<User> Users { get; set; }
+
+        public override void OnApplyTemplate()
+        {
+            base.OnApplyTemplate();
+            var accentBrush = TryFindResource("AccentColorBrush") as SolidColorBrush;
+            if (accentBrush != null) accentBrush.Color.CreateAccentColors();
         }
     }
 

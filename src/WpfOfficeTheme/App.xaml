@@ -4,6 +4,11 @@
              xmlns:local="clr-namespace:WpfOfficeTheme"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Themes\Generic.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <SolidColorBrush x:Key="AccentColorBrush" Color="#1B7444" />
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
