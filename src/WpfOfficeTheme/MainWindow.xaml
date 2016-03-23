@@ -303,7 +303,7 @@
                                     <ColumnDefinition Width="Auto"/>
                                 </Grid.ColumnDefinitions>
                                 <Label Grid.Row="0" Grid.Column="0" Margin="0,0,10,0" Content="Normal" HorizontalAlignment="Right"/>
-                                <CheckBox Grid.Row="0" Grid.Column="1" Content="CheckBox" Margin="5" IsChecked="True"/>
+                                <CheckBox Grid.Row="0" Grid.Column="1" IsThreeState="True" IsChecked="{x:Null}" Content="CheckBox" Margin="5"/>
 
                                 <Label Grid.Row="1" Grid.Column="0" Margin="0,0,10,0" Content="Disabled" HorizontalAlignment="Right"/>
                                 <CheckBox Grid.Row="1" Grid.Column="1" Content="CheckBox" Margin="5" IsEnabled="False" IsChecked="True"/>

@@ -3,5 +3,6 @@
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/Colors.xaml" />
         <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/Button.xaml" />
+        <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/CheckBox.xaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>
