@@ -94,4 +94,7 @@
     <SolidColorBrush x:Key="Item.SelectedInactive.Border" Color="{DynamicResource Pressed.BackgroundColor}"/>
     <SolidColorBrush x:Key="Item.SelectedActive.Background" Color="{DynamicResource Pressed.BackgroundColor}"/>
     <SolidColorBrush x:Key="Item.SelectedActive.Border" Color="{DynamicResource Pressed.BackgroundColor}"/>
+    
+    <!--ListView-->
+    
 </ResourceDictionary>

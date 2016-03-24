@@ -404,7 +404,7 @@
                         <Expander Header="ListView">
                             <ListView x:Name="ListView">
                                 <ListView.ItemContainerStyle>
-                                    <Style TargetType="{x:Type ListViewItem}">
+                                    <Style TargetType="{x:Type ListViewItem}" BasedOn="{StaticResource ListViewItemStyle}">
                                         <Setter Property="Padding" Value="5"/>
                                     </Style>
                                 </ListView.ItemContainerStyle>
