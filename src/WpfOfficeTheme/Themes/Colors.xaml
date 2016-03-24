@@ -69,4 +69,16 @@
     <SolidColorBrush x:Key="ComboBox.Static.Glyph" Color="{StaticResource ForegroundColor}"/>
     
     <SolidColorBrush x:Key="TextBox.Static.Background" Color="#FFFFFFFF"/>
+    <!--ComboBoxItemStyle-->
+    <SolidColorBrush x:Key="ComboBoxItem.ItemsviewHover.Background" Color="{DynamicResource MouseOver.BackgroundColor}"/>
+    <SolidColorBrush x:Key="ComboBoxItem.ItemsviewHover.Border" Color="{DynamicResource MouseOver.BackgroundColor}"/>
+    <SolidColorBrush x:Key="ComboBoxItem.ItemsviewSelected.Background" Color="{DynamicResource Pressed.BackgroundColor}"/>
+    <SolidColorBrush x:Key="ComboBoxItem.ItemsviewSelected.Border" Color="{DynamicResource Pressed.BackgroundColor}"/>
+    <SolidColorBrush x:Key="ComboBoxItem.ItemsviewSelectedHover.Background" Color="{DynamicResource Pressed.BackgroundColor}"/>
+    <SolidColorBrush x:Key="ComboBoxItem.ItemsviewSelectedHover.Border" Color="{DynamicResource Pressed.BackgroundColor}"/>
+    <SolidColorBrush x:Key="ComboBoxItem.ItemsviewSelectedNoFocus.Background" Color="{DynamicResource Pressed.BackgroundColor}"/>
+    <SolidColorBrush x:Key="ComboBoxItem.ItemsviewSelectedNoFocus.Border" Color="{DynamicResource Pressed.BackgroundColor}"/>
+    <SolidColorBrush x:Key="ComboBoxItem.ItemsviewFocus.Border" Color="{DynamicResource MouseOver.BackgroundColor}"/>
+    <SolidColorBrush x:Key="ComboBoxItem.ItemsviewHoverFocus.Background" Color="{DynamicResource MouseOver.BackgroundColor}"/>
+    <SolidColorBrush x:Key="ComboBoxItem.ItemsviewHoverFocus.Border" Color="{DynamicResource MouseOver.BackgroundColor}"/>
 </ResourceDictionary>
