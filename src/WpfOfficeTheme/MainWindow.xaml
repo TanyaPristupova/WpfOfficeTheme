@@ -335,7 +335,21 @@
                                     <ComboBoxItem Padding="2" IsSelected="True" Content="Visible"/>
                                     <ComboBoxItem Padding="2" Content="Hidden"/>
                                 </ComboBox>
-                                <StackPanel Margin="10 46 10 10"/>
+                                
+                                <ComboBox Text="ComboBox" Width="130" Margin="5" IsEditable="True" HorizontalAlignment="Center">
+                                    <ComboBoxItem Padding="2" IsSelected="True" Content="Visible"/>
+                                    <ComboBoxItem Padding="2" Content="Hidden"/>
+                                </ComboBox>
+                                
+                                <ComboBox Text="ComboBox" Width="130" Margin="5" IsEnabled="False" HorizontalAlignment="Center">
+                                    <ComboBoxItem Padding="2" IsSelected="True" Content="Visible"/>
+                                    <ComboBoxItem Padding="2" Content="Hidden"/>
+                                </ComboBox>
+
+                                <ComboBox Text="ComboBox" Width="130" Margin="5" IsEditable="True" IsEnabled="False" HorizontalAlignment="Center">
+                                    <ComboBoxItem Padding="2" IsSelected="True" Content="Visible"/>
+                                    <ComboBoxItem Padding="2" Content="Hidden"/>
+                                </ComboBox>
                             </StackPanel>
                         </Expander>
                         <Expander Header="Label">
