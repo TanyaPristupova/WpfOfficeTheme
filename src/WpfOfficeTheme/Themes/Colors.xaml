@@ -81,4 +81,17 @@
     <SolidColorBrush x:Key="ComboBoxItem.ItemsviewFocus.Border" Color="{DynamicResource MouseOver.BackgroundColor}"/>
     <SolidColorBrush x:Key="ComboBoxItem.ItemsviewHoverFocus.Background" Color="{DynamicResource MouseOver.BackgroundColor}"/>
     <SolidColorBrush x:Key="ComboBoxItem.ItemsviewHoverFocus.Border" Color="{DynamicResource MouseOver.BackgroundColor}"/>
+    
+    <!--ListBox-->
+    <SolidColorBrush x:Key="ListBox.Static.Background" Color="{StaticResource BackgroundColor}"/>
+    <SolidColorBrush x:Key="ListBox.Static.Border" Color="{StaticResource BorderColor}"/>
+    <SolidColorBrush x:Key="ListBox.Disabled.Background" Color="{StaticResource Disabled.BackgroundColor}"/>
+    <SolidColorBrush x:Key="ListBox.Disabled.Border" Color="{StaticResource Disabled.BorderColor}"/>
+    <!--ListBoxItemStyle-->
+    <SolidColorBrush x:Key="Item.MouseOver.Background" Color="{DynamicResource MouseOver.BackgroundColor}"/>
+    <SolidColorBrush x:Key="Item.MouseOver.Border" Color="{DynamicResource MouseOver.BackgroundColor}"/>
+    <SolidColorBrush x:Key="Item.SelectedInactive.Background" Color="{DynamicResource Pressed.BackgroundColor}"/>
+    <SolidColorBrush x:Key="Item.SelectedInactive.Border" Color="{DynamicResource Pressed.BackgroundColor}"/>
+    <SolidColorBrush x:Key="Item.SelectedActive.Background" Color="{DynamicResource Pressed.BackgroundColor}"/>
+    <SolidColorBrush x:Key="Item.SelectedActive.Border" Color="{DynamicResource Pressed.BackgroundColor}"/>
 </ResourceDictionary>
