@@ -111,5 +111,15 @@
     <SolidColorBrush x:Key="MenuTextBrushKey" Color="{StaticResource ForegroundColor}"/>
     <!--MenuSeparator-->
     <SolidColorBrush x:Key="Menu.Static.Separator" Color="{StaticResource BorderColorLight}"/>
-
+    
+    <!--TabControl-->
+    <!--TabItem-->
+    <SolidColorBrush x:Key="TabItem.Static.Background" Color="{StaticResource BackgroundColor}"/>
+    <SolidColorBrush x:Key="TabItem.Static.Border" Color="{StaticResource BackgroundColor}"/>
+    <SolidColorBrush x:Key="TabItem.MouseOver.Background" Color="{DynamicResource MouseOver.BackgroundColor}" />
+    <SolidColorBrush x:Key="TabItem.MouseOver.Border" Color="{DynamicResource MouseOver.BackgroundColor}"/>
+    <SolidColorBrush x:Key="TabItem.Disabled.Background" Color="{StaticResource Disabled.BackgroundColor}"/>
+    <SolidColorBrush x:Key="TabItem.Disabled.Border" Color="{StaticResource Disabled.BorderColor}"/>
+    <SolidColorBrush x:Key="TabItem.Selected.Background" Color="{StaticResource BackgroundColor}"/>
+    <SolidColorBrush x:Key="TabItem.Selected.Border" Color="{StaticResource BorderColor}"/>
 </ResourceDictionary>
