@@ -122,4 +122,18 @@
     <SolidColorBrush x:Key="TabItem.Disabled.Border" Color="{StaticResource Disabled.BorderColor}"/>
     <SolidColorBrush x:Key="TabItem.Selected.Background" Color="{StaticResource BackgroundColor}"/>
     <SolidColorBrush x:Key="TabItem.Selected.Border" Color="{StaticResource BorderColor}"/>
+    
+    <!--RadioButton-->
+    <SolidColorBrush x:Key="RadioButton.Static.Background" Color="{StaticResource BackgroundColor}"/>
+    <SolidColorBrush x:Key="RadioButton.Static.Border" Color="{StaticResource BorderColor}"/>
+    <SolidColorBrush x:Key="RadioButton.MouseOver.Background" Color="{DynamicResource MouseOver.BackgroundColor}"/>
+    <SolidColorBrush x:Key="RadioButton.MouseOver.Border" Color="{DynamicResource MouseOver.BorderColor}"/>
+    <SolidColorBrush x:Key="RadioButton.MouseOver.Glyph" Color="{StaticResource ForegroundColor}"/>
+    <SolidColorBrush x:Key="RadioButton.Disabled.Background" Color="{StaticResource Disabled.BackgroundColor}"/>
+    <SolidColorBrush x:Key="RadioButton.Disabled.Border" Color="{StaticResource Disabled.BorderColor}"/>
+    <SolidColorBrush x:Key="RadioButton.Disabled.Glyph" Color="{StaticResource Disabled.ForegroundColor}"/>
+    <SolidColorBrush x:Key="RadioButton.Pressed.Background" Color="{DynamicResource Pressed.BackgroundColor}"/>
+    <SolidColorBrush x:Key="RadioButton.Pressed.Border" Color="{DynamicResource Pressed.BorderColor}"/>
+    <SolidColorBrush x:Key="RadioButton.Pressed.Glyph" Color="{StaticResource ForegroundColor}"/>
+    <SolidColorBrush x:Key="RadioButton.Static.Glyph" Color="{StaticResource ForegroundColor}"/>
 </ResourceDictionary>

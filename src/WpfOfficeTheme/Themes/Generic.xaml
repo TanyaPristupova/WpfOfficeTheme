@@ -9,5 +9,6 @@
         <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/ListView.xaml" />
         <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/Menu.xaml" />
         <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/TabControl.xaml" />
+        <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/RadioButton.xaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>
