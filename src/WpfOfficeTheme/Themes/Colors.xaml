@@ -14,6 +14,7 @@
     <SolidColorBrush x:Key="ForegroundBrush" Color="{StaticResource ForegroundColor}"/>
     <SolidColorBrush x:Key="BorderBrush" Color="{StaticResource BorderColor}"/>
     <SolidColorBrush x:Key="BackgroundBrush" Color="{StaticResource BackgroundColor}"/>
+    <SolidColorBrush x:Key="Disabled.ForegroundBrush" Color="{StaticResource Disabled.ForegroundColor}"/>
      
     <!--Button-->
     <SolidColorBrush x:Key="Button.Static.Background" Color="{StaticResource BackgroundColor}"/>

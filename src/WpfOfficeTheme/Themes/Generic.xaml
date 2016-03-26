@@ -10,6 +10,7 @@
         <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/Menu.xaml" />
         <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/TabControl.xaml" />
         <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/RadioButton.xaml" />
+        <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/Label.xaml" />
     </ResourceDictionary.MergedDictionaries>
     <!--Common styles-->
     <Style x:Key="FocusVisual">
