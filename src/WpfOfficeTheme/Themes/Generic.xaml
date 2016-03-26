@@ -11,6 +11,7 @@
         <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/TabControl.xaml" />
         <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/RadioButton.xaml" />
         <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/Label.xaml" />
+        <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/ToggleButton.xaml" />
     </ResourceDictionary.MergedDictionaries>
     <!--Common styles-->
     <Style x:Key="FocusVisual">

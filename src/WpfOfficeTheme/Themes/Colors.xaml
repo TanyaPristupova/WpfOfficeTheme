@@ -26,7 +26,11 @@
     <SolidColorBrush x:Key="Button.Disabled.Background" Color="{StaticResource Disabled.BackgroundColor}"/>
     <SolidColorBrush x:Key="Button.Disabled.Border" Color="{StaticResource Disabled.BorderColor}"/>
     <SolidColorBrush x:Key="Button.Disabled.Foreground" Color="{StaticResource Disabled.ForegroundColor}"/>
-    
+   
+    <!--ToggleButton-->
+    <SolidColorBrush x:Key="ToggleButton.Pressed.Background" Color="{DynamicResource Pressed.BackgroundColor}"/>
+    <SolidColorBrush x:Key="ToggleButton.Pressed.Border" Color="{DynamicResource Pressed.BorderColor}"/>
+
     <!--CheckBox-->
     <SolidColorBrush x:Key="OptionMark.Static.Background" Color="{StaticResource BackgroundColor}"/>
     <SolidColorBrush x:Key="OptionMark.Static.Border" Color="{StaticResource BorderColor}"/>
@@ -137,4 +141,7 @@
     <SolidColorBrush x:Key="RadioButton.Pressed.Border" Color="{DynamicResource Pressed.BorderColor}"/>
     <SolidColorBrush x:Key="RadioButton.Pressed.Glyph" Color="{StaticResource ForegroundColor}"/>
     <SolidColorBrush x:Key="RadioButton.Static.Glyph" Color="{StaticResource ForegroundColor}"/>
+    
+   
+
 </ResourceDictionary>
