@@ -7,5 +7,6 @@
         <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/ComboBox.xaml" />
         <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/ListBox.xaml" />
         <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/ListView.xaml" />
+        <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/Menu.xaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

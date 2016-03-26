@@ -3,7 +3,9 @@
     <!--Common colors-->
     <Color x:Key="ForegroundColor">#333</Color>
     <Color x:Key="BackgroundColor">#fff</Color>
+    <Color x:Key="BackgroundColorDark">#F0F0F0</Color>
     <Color x:Key="BorderColor">#D4D4D4</Color>
+    <Color x:Key="BorderColorLight">#F0F0F0</Color>
     <Color x:Key="Disabled.BackgroundColor">#FFE6E6E6</Color>
     <Color x:Key="Disabled.BackgroundColorLight">#fff</Color>
     <Color x:Key="Disabled.BorderColor">#FFBCBCBC</Color>
@@ -68,7 +70,7 @@
     <SolidColorBrush x:Key="ComboBox.Disabled.Editable.Button.Border" Color="Transparent"/>
     <SolidColorBrush x:Key="ComboBox.Static.Glyph" Color="{StaticResource ForegroundColor}"/>
     
-    <SolidColorBrush x:Key="TextBox.Static.Background" Color="#FFFFFFFF"/>
+    <SolidColorBrush x:Key="TextBox.Static.Background" Color="{StaticResource BackgroundColor}"/>
     <!--ComboBoxItemStyle-->
     <SolidColorBrush x:Key="ComboBoxItem.ItemsviewHover.Background" Color="{DynamicResource MouseOver.BackgroundColor}"/>
     <SolidColorBrush x:Key="ComboBoxItem.ItemsviewHover.Border" Color="{DynamicResource MouseOver.BackgroundColor}"/>
@@ -97,4 +99,17 @@
     
     <!--ListView-->
     
+    <!--Menu-->
+    <SolidColorBrush x:Key="Menu.Static.Background" Color="{StaticResource BackgroundColorDark}"/>
+    <SolidColorBrush x:Key="Menu.Static.Foreground" Color="{StaticResource ForegroundColor}"/>
+    <SolidColorBrush x:Key="Menu.Static.Border" Color="{StaticResource BackgroundColorDark}"/>
+    <SolidColorBrush x:Key="Menu.MenuItem.Static.Border" Color="{StaticResource BorderColor}"/>
+    <SolidColorBrush x:Key="Menu.MenuItem.Static.Background" Color="{StaticResource BackgroundColor}"/>
+    <SolidColorBrush x:Key="Menu.MenuItem.MouseOver.Border" Color="{DynamicResource MouseOver.BorderColor}"/>
+    <SolidColorBrush x:Key="Menu.MenuItem.MouseOver.Background" Color="{DynamicResource MouseOver.BackgroundColor}"/>
+    <SolidColorBrush x:Key="Menu.MenuItem.Disabled.Foreground" Color="{StaticResource Disabled.ForegroundColor}"/>
+    <SolidColorBrush x:Key="MenuTextBrushKey" Color="{StaticResource ForegroundColor}"/>
+    <!--MenuSeparator-->
+    <SolidColorBrush x:Key="Menu.Static.Separator" Color="{StaticResource BorderColorLight}"/>
+
 </ResourceDictionary>
