@@ -14,5 +14,6 @@
         <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/Label.xaml" />
         <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/ToggleButton.xaml" />
         <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/TreeView.xaml" />
+        <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/Expander.xaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

@@ -153,4 +153,10 @@
     <SolidColorBrush x:Key="TreeViewItem.TreeArrow.Static.Fill" Color="Transparent"/>
     <SolidColorBrush x:Key="TreeViewItem.TreeArrow.Static.Stroke" Color="{StaticResource ForegroundColor}"/>
 
+    <!--Expander-->
+    <SolidColorBrush x:Key="Expander.MouseOver.Arrow.Stroke" Color="{DynamicResource MouseOver.BorderColor}"/>
+    <SolidColorBrush x:Key="Expander.Pressed.Arrow.Stroke" Color="{DynamicResource Pressed.BorderColor}"/>
+    <SolidColorBrush x:Key="Expander.Disabled.Arrow.Stroke" Color="{StaticResource Disabled.ForegroundColor}"/>
+    <SolidColorBrush x:Key="Expander.Static.Arrow.Stroke" Color="{StaticResource ForegroundColor}"/>
+    
 </ResourceDictionary>
