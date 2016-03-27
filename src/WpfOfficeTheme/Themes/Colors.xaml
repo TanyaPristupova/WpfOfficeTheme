@@ -159,4 +159,8 @@
     <SolidColorBrush x:Key="Expander.Disabled.Arrow.Stroke" Color="{StaticResource Disabled.ForegroundColor}"/>
     <SolidColorBrush x:Key="Expander.Static.Arrow.Stroke" Color="{StaticResource ForegroundColor}"/>
     
+    <!--TextBox-->
+    <SolidColorBrush x:Key="TextBox.Static.Border" Color="{StaticResource BorderColor}"/>
+    <SolidColorBrush x:Key="TextBox.MouseOver.Border" Color="{DynamicResource MouseOver.BorderColor}"/>
+    <SolidColorBrush x:Key="TextBox.Focus.Border" Color="{DynamicResource Pressed.BorderColor}"/>
 </ResourceDictionary>
