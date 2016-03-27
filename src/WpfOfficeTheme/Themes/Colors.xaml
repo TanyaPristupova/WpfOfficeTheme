@@ -142,6 +142,15 @@
     <SolidColorBrush x:Key="RadioButton.Pressed.Glyph" Color="{StaticResource ForegroundColor}"/>
     <SolidColorBrush x:Key="RadioButton.Static.Glyph" Color="{StaticResource ForegroundColor}"/>
     
-   
+    <!--TreeView-->
+    <SolidColorBrush x:Key="ListBorder" Color="{StaticResource BorderColor}"/>
+    <SolidColorBrush x:Key="TreeViewItem.TreeArrow.Static.Checked.Fill" Color="{StaticResource ForegroundColor}"/>
+    <SolidColorBrush x:Key="TreeViewItem.TreeArrow.Static.Checked.Stroke" Color="{StaticResource ForegroundColor}"/>
+    <SolidColorBrush x:Key="TreeViewItem.TreeArrow.MouseOver.Stroke" Color="{DynamicResource AccentColor}"/>
+    <SolidColorBrush x:Key="TreeViewItem.TreeArrow.MouseOver.Fill" Color="Transparent"/>
+    <SolidColorBrush x:Key="TreeViewItem.TreeArrow.MouseOver.Checked.Stroke" Color="{DynamicResource AccentColor}"/>
+    <SolidColorBrush x:Key="TreeViewItem.TreeArrow.MouseOver.Checked.Fill" Color="{DynamicResource AccentColor}"/>
+    <SolidColorBrush x:Key="TreeViewItem.TreeArrow.Static.Fill" Color="Transparent"/>
+    <SolidColorBrush x:Key="TreeViewItem.TreeArrow.Static.Stroke" Color="{StaticResource ForegroundColor}"/>
 
 </ResourceDictionary>
