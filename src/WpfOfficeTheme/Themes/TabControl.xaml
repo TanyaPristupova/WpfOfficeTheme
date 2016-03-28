@@ -7,7 +7,7 @@
     
     <Style TargetType="{x:Type TabItem}">
         <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
-        <Setter Property="Foreground" Value="Black"/>
+        <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}"/>
         <Setter Property="Background" Value="{StaticResource TabItem.Static.Background}"/>
         <Setter Property="BorderBrush" Value="{StaticResource TabItem.Static.Border}"/>
         <Setter Property="Margin" Value="0"/>
@@ -208,7 +208,7 @@
         <Setter Property="Background" Value="{StaticResource TabItem.Selected.Background}"/>
         <Setter Property="BorderBrush" Value="{StaticResource TabItem.Selected.Border}"/>
         <Setter Property="BorderThickness" Value="1"/>
-        <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+        <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type TabControl}">
