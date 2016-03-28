@@ -5,6 +5,11 @@
         <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/CommonControls.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
+    <Geometry x:Key="ArrowTop">M 10 0 L 20 10 0 10z</Geometry>
+    <Geometry x:Key="ArrowBottom">M 0 0 L 10 10 20 0z</Geometry>
+    <Geometry x:Key="ArrowRight">M 0 0 L 0 20 10 10z</Geometry>
+    <Geometry x:Key="ArrowLeft">M 10 0 L 0 10 10 20z</Geometry>
+    
     <Style x:Key="ScrollBarButton" TargetType="{x:Type RepeatButton}">
         <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
         <Setter Property="BorderThickness" Value="1"/>
@@ -139,7 +144,7 @@
                                       IsEnabled="{TemplateBinding IsMouseOver}"
                                       Style="{StaticResource ScrollBarButton}">
                             <Path x:Name="ArrowTop"
-                                  Data="M 0,4 C0,4 0,6 0,6 0,6 3.5,2.5 3.5,2.5 3.5,2.5 7,6 7,6 7,6 7,4 7,4 7,4 3.5,0.5 3.5,0.5 3.5,0.5 0,4 0,4 z"
+                                  Data="{StaticResource ArrowTop}"
                                   Fill="{StaticResource ScrollBar.Static.Glyph}"
                                   Margin="3,4,3,3"
                                   Stretch="Uniform"/>
@@ -166,7 +171,7 @@
                                       Grid.Row="2"
                                       Style="{StaticResource ScrollBarButton}">
                             <Path x:Name="ArrowBottom"
-                                  Data="M 0,2.5 C0,2.5 0,0.5 0,0.5 0,0.5 3.5,4 3.5,4 3.5,4 7,0.5 7,0.5 7,0.5 7,2.5 7,2.5 7,2.5 3.5,6 3.5,6 3.5,6 0,2.5 0,2.5 z"
+                                  Data="{StaticResource ArrowBottom}"
                                   Fill="{StaticResource ScrollBar.Static.Glyph}"
                                   Margin="3,4,3,3"
                                   Stretch="Uniform"/>
@@ -234,7 +239,7 @@
                                               IsEnabled="{TemplateBinding IsMouseOver}"
                                               Style="{StaticResource ScrollBarButton}">
                                     <Path x:Name="ArrowLeft"
-                                          Data="M 3.18,7 C3.18,7 5,7 5,7 5,7 1.81,3.5 1.81,3.5 1.81,3.5 5,0 5,0 5,0 3.18,0 3.18,0 3.18,0 0,3.5 0,3.5 0,3.5 3.18,7 3.18,7 z"
+                                          Data="{StaticResource ArrowLeft}"
                                           Fill="{StaticResource ScrollBar.Static.Glyph}"
                                           Margin="3"
                                           Stretch="Uniform"/>
@@ -260,7 +265,7 @@
                                               IsEnabled="{TemplateBinding IsMouseOver}"
                                               Style="{StaticResource ScrollBarButton}">
                                     <Path x:Name="ArrowRight"
-                                          Data="M 1.81,7 C1.81,7 0,7 0,7 0,7 3.18,3.5 3.18,3.5 3.18,3.5 0,0 0,0 0,0 1.81,0 1.81,0 1.81,0 5,3.5 5,3.5 5,3.5 1.81,7 1.81,7 z"
+                                          Data="{StaticResource ArrowRight}"
                                           Fill="{StaticResource ScrollBar.Static.Glyph}"
                                           Margin="3"
                                           Stretch="Uniform"/>
@@ -334,7 +339,7 @@
                                       IsEnabled="{TemplateBinding IsMouseOver}"
                                       Style="{StaticResource ScrollBarButton}">
                             <Path x:Name="ArrowTop"
-                                  Data="M 0,4 C0,4 0,6 0,6 0,6 3.5,2.5 3.5,2.5 3.5,2.5 7,6 7,6 7,6 7,4 7,4 7,4 3.5,0.5 3.5,0.5 3.5,0.5 0,4 0,4 z"
+                                  Data="{StaticResource ArrowTop}"
                                   Fill="{StaticResource ScrollBar.Static.Glyph}"
                                   Margin="3,4,3,3"
                                   Stretch="Uniform"/>
@@ -361,7 +366,7 @@
                                       Grid.Row="2"
                                       Style="{StaticResource ScrollBarButton}">
                             <Path x:Name="ArrowBottom"
-                                  Data="M 0,2.5 C0,2.5 0,0.5 0,0.5 0,0.5 3.5,4 3.5,4 3.5,4 7,0.5 7,0.5 7,0.5 7,2.5 7,2.5 7,2.5 3.5,6 3.5,6 3.5,6 0,2.5 0,2.5 z"
+                                  Data="{StaticResource ArrowBottom}"
                                   Fill="{StaticResource ScrollBar.Static.Glyph}"
                                   Margin="3,4,3,3"
                                   Stretch="Uniform"/>
@@ -429,7 +434,7 @@
                                               IsEnabled="{TemplateBinding IsMouseOver}"
                                               Style="{StaticResource ScrollBarButton}">
                                     <Path x:Name="ArrowLeft"
-                                          Data="M 3.18,7 C3.18,7 5,7 5,7 5,7 1.81,3.5 1.81,3.5 1.81,3.5 5,0 5,0 5,0 3.18,0 3.18,0 3.18,0 0,3.5 0,3.5 0,3.5 3.18,7 3.18,7 z"
+                                          Data="{StaticResource ArrowLeft}"
                                           Fill="{StaticResource ScrollBar.Static.Glyph}"
                                           Margin="3"
                                           Stretch="Uniform"/>
@@ -455,7 +460,7 @@
                                               IsEnabled="{TemplateBinding IsMouseOver}"
                                               Style="{StaticResource ScrollBarButton}">
                                     <Path x:Name="ArrowRight"
-                                          Data="M 1.81,7 C1.81,7 0,7 0,7 0,7 3.18,3.5 3.18,3.5 3.18,3.5 0,0 0,0 0,0 1.81,0 1.81,0 1.81,0 5,3.5 5,3.5 5,3.5 1.81,7 1.81,7 z"
+                                          Data="{StaticResource ArrowRight}"
                                           Fill="{StaticResource ScrollBar.Static.Glyph}"
                                           Margin="3"
                                           Stretch="Uniform"/>
