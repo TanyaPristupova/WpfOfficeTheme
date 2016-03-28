@@ -163,4 +163,27 @@
     <SolidColorBrush x:Key="TextBox.Static.Border" Color="{StaticResource BorderColor}"/>
     <SolidColorBrush x:Key="TextBox.MouseOver.Border" Color="{DynamicResource MouseOver.BorderColor}"/>
     <SolidColorBrush x:Key="TextBox.Focus.Border" Color="{DynamicResource Pressed.BorderColor}"/>
+    
+    <!--ScrollViewer-->
+    <Color x:Key="ScrollBar.BackgroundColor">#F3F3F3</Color>
+    <Color x:Key="ScrollBar.BorderColorDark">#C3C3C3</Color>
+
+    <SolidColorBrush x:Key="ScrollBar.Static.Background" Color="{StaticResource ScrollBar.BackgroundColor}"/>
+    <SolidColorBrush x:Key="ScrollBar.MouseOver.Background" Color="{StaticResource ScrollBar.BackgroundColor}"/>
+    <SolidColorBrush x:Key="ScrollBar.Pressed.Background" Color="{StaticResource ScrollBar.BackgroundColor}"/>
+    <SolidColorBrush x:Key="ScrollBar.Disabled.Background" Color="{StaticResource Disabled.BackgroundColor}"/>
+    <SolidColorBrush x:Key="ScrollBar.Static.Border" Color="{StaticResource ScrollBar.BackgroundColor}"/>
+    <SolidColorBrush x:Key="ScrollBar.MouseOver.Border" Color="{StaticResource ScrollBar.BackgroundColor}"/>
+    <SolidColorBrush x:Key="ScrollBar.Pressed.Border" Color="{StaticResource ScrollBar.BackgroundColor}"/>
+    <SolidColorBrush x:Key="ScrollBar.Disabled.Border" Color="{StaticResource Disabled.BorderColor}"/>
+    <SolidColorBrush x:Key="ScrollBar.Static.Glyph" Color="{StaticResource ForegroundColor}"/>
+    <SolidColorBrush x:Key="ScrollBar.Pressed.Glyph" Color="{StaticResource ForegroundColor}"/>
+    <SolidColorBrush x:Key="ScrollBar.MouseOver.Glyph" Color="{StaticResource ForegroundColor}"/>
+    <SolidColorBrush x:Key="ScrollBar.Disabled.Glyph" Color="{StaticResource Disabled.ForegroundColor}"/>
+    <SolidColorBrush x:Key="ScrollBar.Static.Thumb" Color="{StaticResource BackgroundColor}"/>
+    <SolidColorBrush x:Key="ScrollBar.Static.Thumb.Border" Color="{StaticResource BorderColor}"/>
+    <SolidColorBrush x:Key="ScrollBar.MouseOver.Thumb" Color="{StaticResource BackgroundColorDark}"/>
+    <SolidColorBrush x:Key="ScrollBar.Pressed.Thumb.Border" Color="{StaticResource ScrollBar.BorderColorDark}"/>
+    <SolidColorBrush x:Key="ScrollBar.Pressed.Thumb" Color="{StaticResource BackgroundColorDark}"/>
+    
 </ResourceDictionary>
