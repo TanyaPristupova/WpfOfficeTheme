@@ -1,11 +1,11 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/Colors.xaml" />
-        <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/CommonControls.xaml" />
+        <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/Styles/Colors.xaml" />
+        <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/Styles/CommonControls.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
-    <Style x:Key="ListBoxItemStyle" TargetType="{x:Type ListBoxItem}">
+    <Style x:Key="ListViewItemStyle" TargetType="{x:Type ListViewItem}">
         <Setter Property="SnapsToDevicePixels" Value="True"/>
         <Setter Property="Padding" Value="4,1"/>
         <Setter Property="HorizontalContentAlignment" Value="{Binding HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
@@ -16,7 +16,7 @@
         <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="{x:Type ListBoxItem}">
+                <ControlTemplate TargetType="{x:Type ListViewItem}">
                     <Border x:Name="Bd"
                             BorderBrush="{TemplateBinding BorderBrush}"
                             BorderThickness="{TemplateBinding BorderThickness}"
@@ -60,7 +60,7 @@
         </Setter>
     </Style>
     
-    <Style TargetType="{x:Type ListBox}">
+    <Style TargetType="{x:Type ListView}">
         <Setter Property="Background" Value="{StaticResource ListBox.Static.Background}"/>
         <Setter Property="BorderBrush" Value="{StaticResource ListBox.Static.Border}"/>
         <Setter Property="BorderThickness" Value="1"/>
@@ -71,12 +71,12 @@
         <Setter Property="ScrollViewer.PanningMode" Value="Both"/>
         <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
         <Setter Property="VerticalContentAlignment" Value="Center"/>
-        <Setter Property="ItemContainerStyle" Value="{StaticResource ListBoxItemStyle}"/>
+        <Setter Property="ItemContainerStyle" Value="{StaticResource ListViewItemStyle}"/>
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="{x:Type ListBox}">
+                <ControlTemplate TargetType="{x:Type ListView}">
                     <Border x:Name="Bd"
-                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderBrush="{TemplateBinding BorderBrush}" 
                             BorderThickness="{TemplateBinding BorderThickness}"
                             Background="{TemplateBinding Background}"
                             Padding="1"
@@ -102,4 +102,5 @@
             </Setter.Value>
         </Setter>
     </Style>
+    <!--TODO: add ListViewWithGridView style-->
 </ResourceDictionary>

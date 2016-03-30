@@ -1,8 +1,8 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/Colors.xaml" />
-        <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/CommonControls.xaml" />
+        <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/Styles/Colors.xaml" />
+        <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/Styles/CommonControls.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
     <Geometry x:Key="ArrowTop">M 10 0 L 20 10 0 10z</Geometry>
