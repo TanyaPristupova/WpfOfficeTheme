@@ -188,4 +188,23 @@
     <SolidColorBrush x:Key="ScrollBar.Pressed.Thumb.Border" Color="{StaticResource ScrollBar.BorderColorDark}"/>
     <SolidColorBrush x:Key="ScrollBar.Pressed.Thumb" Color="{StaticResource BackgroundColorDark}"/>
     
+    <!--DataGrid-->
+    <Color x:Key="DataGrid.GridLinesColor">#E9E9E9</Color>
+    <Color x:Key="DataGrid.SelectAllButtonColor">#DFDFDF</Color>
+    <Color x:Key="DataGrid.SelectAllButton.MouseOverColor">#E9E9E9</Color>
+    
+    <SolidColorBrush x:Key="DataGrid.BackgroundBrush" Color="{StaticResource BackgroundColor}"/>
+    <SolidColorBrush x:Key="DataGrid.Header.Background" Color="{StaticResource BackgroundColorDark}"/>
+    <SolidColorBrush x:Key="DataGrid.Header.Border" Color="{StaticResource DataGrid.GridLinesColor}"/>
+    <SolidColorBrush x:Key="DataGrid.Header.MouseOver.Background" Color="{DynamicResource MouseOver.BackgroundColor}"/>
+    <SolidColorBrush x:Key="DataGrid.Header.Selected.Background" Color="{DynamicResource Pressed.BackgroundColor}"/>
+    <SolidColorBrush x:Key="DataGrid.Row.Background" Color="{StaticResource BackgroundColor}"/>
+    <SolidColorBrush x:Key="DataGrid.Row.Pressed.Background" Color="{DynamicResource Pressed.BackgroundColor}"/>
+    <SolidColorBrush x:Key="DataGrid.Row.Selected.Background" Color="{DynamicResource MouseOver.BackgroundColor}"/>
+    <SolidColorBrush x:Key="DataGrid.Cell.Pressed.Background" Color="{StaticResource BackgroundColor}"/>
+    <SolidColorBrush x:Key="DataGrid.Cell.Pressed.Border" Color="{DynamicResource AccentColor}"/>
+    <SolidColorBrush x:Key="DataGrid.GridLines" Color="{StaticResource DataGrid.GridLinesColor}"/>
+    <SolidColorBrush x:Key="DataGrid.SelectAllButton" Color="{StaticResource DataGrid.SelectAllButtonColor}" />
+    <SolidColorBrush x:Key="DataGrid.SelectAllButton.MouseOver" Color="{StaticResource DataGrid.SelectAllButton.MouseOverColor}" />
+    <SolidColorBrush x:Key="DataGrid.SelectAllButton.Pressed" Color="{DynamicResource AccentColor}"/>
 </ResourceDictionary>

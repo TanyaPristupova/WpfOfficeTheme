@@ -17,5 +17,6 @@
         <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/Expander.xaml" />
         <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/TextBox.xaml" />
         <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/ScrollViewer.xaml" />
+        <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/DataGrid.xaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

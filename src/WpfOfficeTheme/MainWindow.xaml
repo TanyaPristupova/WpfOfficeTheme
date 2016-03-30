@@ -268,7 +268,7 @@
                 </ListBox>
             </TabItem>
             <TabItem Header="DataGrid">
-                <DataGrid x:Name="DataGrid" ItemsSource="{Binding Users}" HeadersVisibility="Column" />
+                <DataGrid x:Name="DataGrid" ItemsSource="{Binding Users}" RowHeight="22" RowHeaderWidth="20" HeadersVisibility="All" />
             </TabItem>
             <TabItem Header="Controls">
                 <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Visible">
@@ -638,7 +638,7 @@
                             </TreeView>
                         </Expander>
                         <Expander Header="DataGrid">
-                            <DataGrid x:Name="DataGrid1" HeadersVisibility="Column" />
+                            <DataGrid x:Name="DataGrid1" HeadersVisibility="Column" RowHeight="22" />
                         </Expander>
                     </StackPanel>
                 </ScrollViewer>
