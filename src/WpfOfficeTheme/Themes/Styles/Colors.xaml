@@ -114,6 +114,7 @@
     <SolidColorBrush x:Key="Menu.MenuItem.Static.Border" Color="{StaticResource BorderColor}"/>
     <SolidColorBrush x:Key="Menu.MenuItem.Static.Background" Color="{StaticResource BackgroundColor}"/>
     <SolidColorBrush x:Key="Menu.MenuItem.MouseOver.Background" Color="{DynamicResource MouseOver.BackgroundColor}"/>
+    <SolidColorBrush x:Key="Menu.MenuItem.MouseOver.BackgroundDark" Color="{DynamicResource BorderColor}"/>
     <SolidColorBrush x:Key="Menu.MenuItem.Disabled.Foreground" Color="{StaticResource Disabled.ForegroundColor}"/>
     <SolidColorBrush x:Key="MenuTextBrushKey" Color="{StaticResource ForegroundColor}"/>
     <!--MenuSeparator-->

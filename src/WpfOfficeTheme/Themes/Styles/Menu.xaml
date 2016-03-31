@@ -143,9 +143,9 @@
         <Grid SnapsToDevicePixels="True">
             <Border x:Name="BorderHelper"
                     Visibility="Hidden"
-                    BorderBrush="White"
+                    BorderBrush="{StaticResource Menu.MenuItem.Static.Background}"
                     BorderThickness="{TemplateBinding BorderThickness}"
-                    Background="White"
+                    Background="{StaticResource Menu.Static.Background}"
                     SnapsToDevicePixels="True"/>
             <Border x:Name="templateRoot"
                 BorderBrush="{TemplateBinding BorderBrush}"
@@ -235,8 +235,8 @@
                 <Setter Property="Visibility" TargetName="Icon" Value="Collapsed"/>
             </Trigger>
             <Trigger Property="IsHighlighted" Value="True">
-                <Setter Property="Background" TargetName="templateRoot" Value="{StaticResource Menu.MenuItem.MouseOver.Background}"/>
-                <Setter Property="BorderBrush" TargetName="templateRoot" Value="{StaticResource Menu.MenuItem.MouseOver.Background}"/>
+                <Setter Property="Background" TargetName="templateRoot" Value="{StaticResource Menu.MenuItem.MouseOver.BackgroundDark}"/>
+                <Setter Property="BorderBrush" TargetName="templateRoot" Value="{StaticResource Menu.MenuItem.MouseOver.BackgroundDark}"/>
                 <Setter Property="Visibility" TargetName="BorderHelper" Value="Visible"/>
             </Trigger>
             <Trigger Property="IsEnabled" Value="False">
@@ -304,8 +304,8 @@
                 <Setter Property="Visibility" TargetName="Icon" Value="Collapsed"/>
             </Trigger>
             <Trigger Property="IsHighlighted" Value="True">
-                <Setter Property="Background" TargetName="templateRoot" Value="{StaticResource Menu.MenuItem.MouseOver.Background}"/>
-                <Setter Property="BorderBrush" TargetName="templateRoot" Value="{StaticResource Menu.MenuItem.MouseOver.Background}"/>
+                <Setter Property="Background" TargetName="templateRoot" Value="{StaticResource Menu.MenuItem.MouseOver.BackgroundDark}"/>
+                <Setter Property="BorderBrush" TargetName="templateRoot" Value="{StaticResource Menu.MenuItem.MouseOver.BackgroundDark}"/>
                 <Setter Property="Visibility" TargetName="BorderHelper" Value="Visible"/>
             </Trigger>
             <Trigger Property="IsEnabled" Value="False">
