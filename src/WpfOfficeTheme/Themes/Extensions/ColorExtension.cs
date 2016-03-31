@@ -53,22 +53,22 @@ namespace WpfOfficeTheme
 
         private static Color GetMouseOverBackgroundColor(this Color color)
         {
-            return Color.FromArgb(50, color.R, color.G, color.B);
+            return Color.FromArgb(30, color.R, color.G, color.B);
         }
 
         private static Color GetMouseOverBorderColor(this Color color)
         {
-            return Color.FromArgb(100, color.R, color.G, color.B);
+            return Color.FromArgb(70, color.R, color.G, color.B);
         }
 
         private static Color GetPressedBackgroundColor(this Color color)
         {
-            return Color.FromArgb(100, color.R, color.G, color.B);
+            return Color.FromArgb(70, color.R, color.G, color.B);
         }
 
         private static Color GetPressedBorderColor(this Color color)
         {
-            return Color.FromArgb(150, color.R, color.G, color.B);
+            return Color.FromArgb(100, color.R, color.G, color.B);
         }
     }
 }
