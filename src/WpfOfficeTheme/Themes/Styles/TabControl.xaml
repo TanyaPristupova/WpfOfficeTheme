@@ -4,7 +4,7 @@
         <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/Styles/Colors.xaml" />
         <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/Styles/CommonControls.xaml" />
     </ResourceDictionary.MergedDictionaries>
-    
+
     <Style TargetType="{x:Type TabItem}">
         <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
         <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}"/>
@@ -208,7 +208,11 @@
             </Setter.Value>
         </Setter>
     </Style>
+    
     <Style TargetType="{x:Type TabControl}">
+        <Style.Resources>
+            <Style TargetType="{x:Type TabItem}" BasedOn="{StaticResource {x:Type TabItem}}"/>
+        </Style.Resources>
         <Setter Property="Padding" Value="2"/>
         <Setter Property="HorizontalContentAlignment" Value="Center"/>
         <Setter Property="VerticalContentAlignment" Value="Center"/>
@@ -232,7 +236,6 @@
                             <RowDefinition x:Name="RowDefinition1" Height="*"/>
                         </Grid.RowDefinitions>
                         <TabPanel x:Name="headerPanel"
-                                  Background="Transparent"
                                   Grid.Column="0"
                                   IsItemsHost="true"
                                   Margin="0"
@@ -288,5 +291,72 @@
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
+    </Style>
+
+    <Style x:Key="AccentTabItem" TargetType="{x:Type TabItem}">
+        <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+        <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}"/>
+        <Setter Property="Background" Value="{StaticResource AccentBackgroundBrush}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource TabItem.Static.Border}"/>
+        <Setter Property="Margin" Value="0"/>
+        <Setter Property="Padding" Value="6,4,6,4"/>
+        <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+        <Setter Property="VerticalContentAlignment" Value="Stretch"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TabItem}">
+                    <Grid x:Name="templateRoot" SnapsToDevicePixels="true">
+                        <Border x:Name="mainBorder"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="0"
+                                Background="{TemplateBinding Background}"
+                                Margin="0">
+                            <Border x:Name="innerBorder"
+                                    BorderBrush="{StaticResource TabItem.Selected.Border}"
+                                    BorderThickness="0"
+                                    Background="{TemplateBinding Background}"
+                                    Margin="0"/>
+                        </Border>
+                        <ContentPresenter x:Name="contentPresenter"
+                                          ContentSource="Header"
+                                          Focusable="False"
+                                          HorizontalAlignment="{Binding HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"
+                                          Margin="{TemplateBinding Padding}"
+                                          RecognizesAccessKey="True"
+                                          SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+                                          VerticalAlignment="{Binding VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"
+                                          TextBlock.Foreground="{StaticResource ForegroundBrushLight}"/>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <MultiDataTrigger>
+                            <MultiDataTrigger.Conditions>
+                                <Condition Binding="{Binding IsMouseOver, RelativeSource={RelativeSource Self}}" Value="True"/>
+                                <Condition Binding="{Binding IsEnabled, RelativeSource={RelativeSource AncestorType={x:Type TabControl}}}" Value="True"/>
+                            </MultiDataTrigger.Conditions>
+                            <Setter Property="Background" Value="{StaticResource AccentMouseOverBackgroundBrush}"/>
+                        </MultiDataTrigger><MultiDataTrigger>
+                            <MultiDataTrigger.Conditions>
+                                <Condition Binding="{Binding IsSelected, RelativeSource={RelativeSource Self}}" Value="True"/>
+                                <Condition Binding="{Binding IsEnabled, RelativeSource={RelativeSource AncestorType={x:Type TabControl}}}" Value="True"/>
+                            </MultiDataTrigger.Conditions>
+                            <Setter Property="Background" Value="{StaticResource AccentSelectedBackgroundBrush}"/>
+                        </MultiDataTrigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" Value="{StaticResource TabItem.Disabled.Background}"/>
+                            <Setter Property="TextBlock.Foreground" TargetName="contentPresenter" Value="{StaticResource ForegroundBrush}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="AccentTabControl" TargetType="{x:Type TabControl}" BasedOn="{StaticResource {x:Type TabControl}}">
+        <Style.Resources>
+            <Style TargetType="{x:Type TabPanel}">
+                <Setter Property="Background" Value="{StaticResource AccentBackgroundBrush}"/>
+                <Setter Property="MinWidth" Value="100"/>
+            </Style>
+            <Style TargetType="{x:Type TabItem}" BasedOn="{StaticResource AccentTabItem}"/>
+        </Style.Resources>
     </Style>
 </ResourceDictionary>
