@@ -16,7 +16,8 @@
                 <ControlTemplate TargetType="{x:Type RadioButton}">
                     <Grid x:Name="templateRoot"
                           Background="Transparent"
-                          SnapsToDevicePixels="True">
+                          SnapsToDevicePixels="True"
+                          Margin="{TemplateBinding Margin}">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="Auto"/>
                             <ColumnDefinition Width="*"/>

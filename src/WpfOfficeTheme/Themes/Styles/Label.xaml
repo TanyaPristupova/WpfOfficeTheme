@@ -39,6 +39,12 @@
         <Setter Property="FontWeight" Value="Light" />
     </Style>
 
+    <Style x:Key="AccentHeader30" TargetType="{x:Type Label}" BasedOn="{StaticResource {x:Type Label}}">
+        <Setter Property="Foreground" Value="{StaticResource AccentForegroundBrush}" />
+        <Setter Property="FontSize" Value="30" />
+        <Setter Property="FontWeight" Value="Light" />
+    </Style>
+
     <Style x:Key="AccentHeader20" TargetType="{x:Type Label}" BasedOn="{StaticResource {x:Type Label}}">
         <Setter Property="Foreground" Value="{StaticResource AccentForegroundBrush}" />
         <Setter Property="FontSize" Value="20" />
@@ -47,6 +53,11 @@
 
     <Style x:Key="Header40" TargetType="{x:Type Label}" BasedOn="{StaticResource {x:Type Label}}">
         <Setter Property="FontSize" Value="40" />
+        <Setter Property="FontWeight" Value="Light" />
+    </Style>
+    
+    <Style x:Key="Header30" TargetType="{x:Type Label}" BasedOn="{StaticResource {x:Type Label}}">
+        <Setter Property="FontSize" Value="30" />
         <Setter Property="FontWeight" Value="Light" />
     </Style>
     
