@@ -18,5 +18,6 @@
         <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/Styles/TextBox.xaml" />
         <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/Styles/ToggleButton.xaml" />
         <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/Styles/TreeView.xaml" />
+        <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/Styles/GroupBox.xaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>
