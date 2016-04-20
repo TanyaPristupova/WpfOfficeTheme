@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfOfficeTheme"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="700">
+        Title="MainWindow" Height="700" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="200"/>
@@ -112,8 +112,10 @@
                                         <Label Content="Accent Button"
                                                Margin="5" Style="{StaticResource Header20}"/>
                                         <Button Margin="5 2" Padding="4 2" Width="100"
+                                                Style="{StaticResource AccentButton}"
                                                 Content="Enabled" HorizontalAlignment="Left"/>
-                                        <Button Margin="5 2" Padding ="4 2" Width="100" Content="Disabled"
+                                        <Button Margin="5 2" Padding ="4 2" Width="100" 
+                                                Content="Disabled" Style="{StaticResource AccentButton}"
                                                 IsEnabled="False" HorizontalAlignment="Left"/>
                                     </StackPanel>
                                 </StackPanel>
