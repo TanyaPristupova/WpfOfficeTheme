@@ -56,8 +56,8 @@
 
     <Style x:Key="AccentButton" TargetType="{x:Type Button}">
         <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
-        <Setter Property="Background" Value="{StaticResource AccentBackgroundBrush}"/>
-        <Setter Property="BorderBrush" Value="{StaticResource AccentBackgroundBrush}"/>
+        <Setter Property="Background" Value="{StaticResource AccentNormalBrush}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource AccentNormalBrush}"/>
         <Setter Property="Foreground" Value="{StaticResource ForegroundBrushLight}"/>
         <Setter Property="BorderThickness" Value="1"/>
         <Setter Property="HorizontalContentAlignment" Value="Center"/>
@@ -85,12 +85,12 @@
                             <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
                         </Trigger>
                         <Trigger Property="IsMouseOver" Value="true">
-                            <Setter Property="Background" TargetName="border" Value="{StaticResource AccentMouseOverBackgroundBrush}"/>
-                            <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource AccentMouseOverBackgroundBrush}"/>
+                            <Setter Property="Background" TargetName="border" Value="{StaticResource AccentLightBrush}"/>
+                            <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource AccentLightBrush}"/>
                         </Trigger>
                         <Trigger Property="IsPressed" Value="true">
-                            <Setter Property="Background" TargetName="border" Value="{StaticResource AccentSelectedBackgroundBrush}"/>
-                            <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource AccentSelectedBackgroundBrush}"/>
+                            <Setter Property="Background" TargetName="border" Value="{StaticResource AccentDarkBrush}"/>
+                            <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource AccentDarkBrush}"/>
                         </Trigger>
                         <Trigger Property="IsEnabled" Value="false">
                             <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Disabled.Background}"/>

@@ -18,13 +18,13 @@
     <SolidColorBrush x:Key="ForegroundBrushLight" Color="{StaticResource ForegroundColorLight}"/>
     <SolidColorBrush x:Key="BorderBrush" Color="{StaticResource BorderColor}"/>
     <SolidColorBrush x:Key="BackgroundBrush" Color="{StaticResource BackgroundColor}"/>
-    <SolidColorBrush x:Key="BackgroundBrushLight" Color="{StaticResource BackgroundColorDark}"/>
-    <SolidColorBrush x:Key="MouseOverBackgroundBrush" Color="{DynamicResource MouseOver.BackgroundColor}"/>
+    <SolidColorBrush x:Key="BackgroundBrushDark" Color="{StaticResource BackgroundColorDark}"/>
+    <SolidColorBrush x:Key="MouseOver.BackgroundBrush" Color="{DynamicResource MouseOver.BackgroundColor}"/>
     <SolidColorBrush x:Key="Disabled.ForegroundBrush" Color="{StaticResource Disabled.ForegroundColor}"/>
     <SolidColorBrush x:Key="AccentForegroundBrush" Color="{DynamicResource AccentColor1}"/>
-    <SolidColorBrush x:Key="AccentBackgroundBrush" Color="{DynamicResource AccentColor}"/>
-    <SolidColorBrush x:Key="AccentMouseOverBackgroundBrush" Color="{DynamicResource Pressed.BorderColorDark}"/>
-    <SolidColorBrush x:Key="AccentSelectedBackgroundBrush" Color="{DynamicResource AccentColor1}"/>
+    <SolidColorBrush x:Key="AccentNormalBrush" Color="{DynamicResource AccentColor}"/>
+    <SolidColorBrush x:Key="AccentDarkBrush" Color="{DynamicResource Pressed.BorderColorDark}"/>
+    <SolidColorBrush x:Key="AccentLightBrush" Color="{DynamicResource AccentColor1}"/>
     
     <!--FontStyle-->
     <Style TargetType="{x:Type Control}">
@@ -39,7 +39,7 @@
     </Style>
 
     <!--Button-->
-    
+
     <SolidColorBrush x:Key="Button.Static.Background" Color="{StaticResource BackgroundColor}"/>
     <SolidColorBrush x:Key="Button.Static.Border" Color="{StaticResource BorderColor}"/>
     <SolidColorBrush x:Key="Button.MouseOver.Background" Color="{DynamicResource MouseOver.BackgroundColor}"/>
@@ -55,18 +55,18 @@
     <SolidColorBrush x:Key="ToggleButton.Pressed.Border" Color="{DynamicResource Pressed.BorderColor}"/>
 
     <!--CheckBox-->
-    <SolidColorBrush x:Key="OptionMark.Static.Background" Color="{StaticResource BackgroundColor}"/>
-    <SolidColorBrush x:Key="OptionMark.Static.Border" Color="{StaticResource BorderColor}"/>
-    <SolidColorBrush x:Key="OptionMark.MouseOver.Background" Color="{DynamicResource MouseOver.BackgroundColor}"/>
-    <SolidColorBrush x:Key="OptionMark.MouseOver.Border" Color="{DynamicResource MouseOver.BorderColor}"/>
-    <SolidColorBrush x:Key="OptionMark.MouseOver.Glyph" Color="{StaticResource GlyphColor}"/>
-    <SolidColorBrush x:Key="OptionMark.Disabled.Background" Color="{StaticResource Disabled.BackgroundColor}"/>
-    <SolidColorBrush x:Key="OptionMark.Disabled.Border" Color="{StaticResource Disabled.BorderColor}"/>
-    <SolidColorBrush x:Key="OptionMark.Disabled.Glyph" Color="{StaticResource Disabled.GlyphColor}"/>
-    <SolidColorBrush x:Key="OptionMark.Pressed.Background" Color="{DynamicResource Pressed.BackgroundColor}"/>
-    <SolidColorBrush x:Key="OptionMark.Pressed.Border" Color="{DynamicResource Pressed.BorderColor}"/>
-    <SolidColorBrush x:Key="OptionMark.Pressed.Glyph" Color="{StaticResource GlyphColor}"/>
-    <SolidColorBrush x:Key="OptionMark.Static.Glyph" Color="{StaticResource GlyphColor}"/>
+    <SolidColorBrush x:Key="CheckBox.Static.Background" Color="{StaticResource BackgroundColor}"/>
+    <SolidColorBrush x:Key="CheckBox.Static.Border" Color="{StaticResource BorderColor}"/>
+    <SolidColorBrush x:Key="CheckBox.MouseOver.Background" Color="{DynamicResource MouseOver.BackgroundColor}"/>
+    <SolidColorBrush x:Key="CheckBox.MouseOver.Border" Color="{DynamicResource MouseOver.BorderColor}"/>
+    <SolidColorBrush x:Key="CheckBox.MouseOver.Glyph" Color="{StaticResource GlyphColor}"/>
+    <SolidColorBrush x:Key="CheckBox.Disabled.Background" Color="{StaticResource Disabled.BackgroundColor}"/>
+    <SolidColorBrush x:Key="CheckBox.Disabled.Border" Color="{StaticResource Disabled.BorderColor}"/>
+    <SolidColorBrush x:Key="CheckBox.Disabled.Glyph" Color="{StaticResource Disabled.GlyphColor}"/>
+    <SolidColorBrush x:Key="CheckBox.Pressed.Background" Color="{DynamicResource Pressed.BackgroundColor}"/>
+    <SolidColorBrush x:Key="CheckBox.Pressed.Border" Color="{DynamicResource Pressed.BorderColor}"/>
+    <SolidColorBrush x:Key="CheckBox.Pressed.Glyph" Color="{StaticResource GlyphColor}"/>
+    <SolidColorBrush x:Key="CheckBox.Static.Glyph" Color="{StaticResource GlyphColor}"/>
 
     <!--ComboBox-->
     <SolidColorBrush x:Key="ComboBox.Static.Background" Color="{StaticResource BackgroundColor}"/>

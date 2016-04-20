@@ -152,8 +152,10 @@
                                         <Label Content="Accent Radio Button"
                                                Margin="5" Style="{StaticResource Header20}"/>
                                         <StackPanel Orientation="Horizontal">
-                                            <RadioButton Margin="5 2" Content="Enabled" IsChecked="True" Width="80"/>
-                                            <RadioButton Margin="5 2" Content="Enabled" Width="80"/>
+                                            <RadioButton Margin="5 2" Content="Enabled" IsChecked="True" Width="80"
+                                                         Style="{StaticResource AccentRadioButton}"/>
+                                            <RadioButton Margin="5 2" Content="Enabled" Width="80"
+                                                         Style="{StaticResource AccentRadioButton}"/>
                                         </StackPanel>
                                         <StackPanel Orientation="Horizontal">
                                             <RadioButton Margin="5 2" Content="Disabled" IsChecked="True" IsEnabled="False" Width="80"/>
