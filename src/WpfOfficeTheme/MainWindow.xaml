@@ -176,9 +176,9 @@
                                     <StackPanel MinWidth="200">
                                         <Label Content="Accent Check Box"
                                                Margin="5" Style="{StaticResource Header20}"/>
-                                        <CheckBox Margin="5 2" Content="Enabled"/>
-                                        <CheckBox Margin="5 2" Content="Checked" IsChecked="True"/>
-                                        <CheckBox Margin="5 2" Content="Disabled" IsEnabled="False"/>
+                                        <CheckBox Margin="5 2" Content="Enabled" Style="{StaticResource AccentCheckBox}"/>
+                                        <CheckBox Margin="5 2" Content="Checked" IsChecked="True" Style="{StaticResource AccentCheckBox}"/>
+                                        <CheckBox Margin="5 2" Content="Disabled" IsEnabled="False" Style="{StaticResource AccentCheckBox}"/>
                                     </StackPanel>
                                 </StackPanel>
                             </GroupBox>
@@ -226,21 +226,35 @@
                                         <ComboBox Width="150" Margin="5 2" IsEnabled="False" HorizontalAlignment="Left">
                                             <ComboBoxItem Padding="2" IsSelected="True" Content="Disabled"/>
                                         </ComboBox>
+                                        <ComboBox Width="150" Margin="5 2" IsEnabled="False" IsEditable="True"
+                                                  HorizontalAlignment="Left">
+                                            <ComboBoxItem Padding="2" IsSelected="True" Content="Disabled"/>
+                                        </ComboBox>
                                     </StackPanel>
                                     <StackPanel MinWidth="200">
                                         <Label Content="Accent Combo Box"
                                                Margin="5" Style="{StaticResource Header20}"/>
-                                        <ComboBox Width="150" Margin="5 2" HorizontalAlignment="Left">
+                                        <ComboBox Width="150" Margin="5 2" HorizontalAlignment="Left"
+                                                  Style="{StaticResource AccentComboBox}">
                                             <ComboBoxItem Padding="2" IsSelected="True" Content="Default"/>
                                             <ComboBoxItem Padding="2" Content="Editable"/>
                                             <ComboBoxItem Padding="2" Content="Disabled"/>
                                         </ComboBox>
-                                        <ComboBox Width="150" Margin="5 2" IsEditable="True" HorizontalAlignment="Left">
+                                        <ComboBox Width="150" Margin="5 2" IsEditable="True"
+                                                  HorizontalAlignment="Left"
+                                                  Style="{StaticResource AccentComboBox}">
                                             <ComboBoxItem Padding="2" Content="Default"/>
                                             <ComboBoxItem Padding="2" IsSelected="True" Content="Editable"/>
                                             <ComboBoxItem Padding="2" Content="Disabled"/>
                                         </ComboBox>
-                                        <ComboBox Width="150" Margin="5 2" IsEnabled="False" HorizontalAlignment="Left">
+                                        <ComboBox Width="150" Margin="5 2" IsEnabled="False"
+                                                  HorizontalAlignment="Left"
+                                                  Style="{StaticResource AccentComboBox}">
+                                            <ComboBoxItem Padding="2" IsSelected="True" Content="Disabled"/>
+                                        </ComboBox>
+                                        <ComboBox Width="150" Margin="5 2" IsEnabled="False" IsEditable="True"
+                                                  HorizontalAlignment="Left"
+                                                  Style="{StaticResource AccentComboBox}">
                                             <ComboBoxItem Padding="2" IsSelected="True" Content="Disabled"/>
                                         </ComboBox>
                                     </StackPanel>
@@ -521,15 +535,15 @@
                         <Expander Header="Button">
                             <Grid HorizontalAlignment="Center">
                                 <Grid.RowDefinitions>
-                                    <RowDefinition Height="25"/>
-                                    <RowDefinition Height="25"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
                                     <RowDefinition Height="25"/>
                                 </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="Auto"/>
                                     <ColumnDefinition Width="Auto"/>
                                 </Grid.ColumnDefinitions>
-                                <Label Grid.Row="0" Grid.Column="0" Margin="0,0,10,0" Content="Normal" HorizontalAlignment="Right"/>
+                                <Label Grid.Row="0" Grid.Column="0" Margin="0,0,10,0" Content="Normal Normal" HorizontalAlignment="Right"/>
                                 <Button Grid.Row="0" Grid.Column="1" Content="Button" Width="50" Margin="2"/>
 
                                 <Label Grid.Row="1" Grid.Column="0" Margin="0,0,10,0" Content="Disabled" HorizontalAlignment="Right"/>
@@ -539,8 +553,8 @@
                         <Expander Header="CheckBox">
                             <Grid HorizontalAlignment="Center">
                                 <Grid.RowDefinitions>
-                                    <RowDefinition Height="25"/>
-                                    <RowDefinition Height="25"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
                                     <RowDefinition Height="25"/>
                                 </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
@@ -558,9 +572,9 @@
                             <GroupBox Header="Copy/Paste group box">
                                 <Grid HorizontalAlignment="Center">
                                     <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
                                         <RowDefinition Height="25"/>
-                                        <RowDefinition Height="25"/>
-                                        <RowDefinition Height="5"/>
                                     </Grid.RowDefinitions>
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="Auto"/>
@@ -575,33 +589,48 @@
                             </GroupBox>
                         </Expander>
                         <Expander Header="ComboBox">
-                            <StackPanel>
-                                <ComboBox Text="ComboBox" Width="130" Margin="5" HorizontalAlignment="Center">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="25"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Row="0" Grid.Column="0" Margin="0,0,10,0" Content="Normal" HorizontalAlignment="Right"/>
+                                <ComboBox Grid.Row="0" Grid.Column="1" Text="ComboBox" Width="130" Margin="5" HorizontalAlignment="Center">
                                     <ComboBoxItem Padding="2" IsSelected="True" Content="Visible"/>
                                     <ComboBoxItem Padding="2" Content="Hidden"/>
                                 </ComboBox>
 
-                                <ComboBox Text="ComboBox" Width="130" Margin="5" IsEditable="True" HorizontalAlignment="Center">
+                                <Label Grid.Row="1" Grid.Column="0" Margin="0,0,10,0" Content="Editable" HorizontalAlignment="Right"/>
+                                <ComboBox Grid.Row="1" Grid.Column="1" Text="ComboBox" Width="130" Margin="5" IsEditable="True" HorizontalAlignment="Center">
+                                    <ComboBoxItem Padding="2" IsSelected="True" Content="Visible"/>
+                                    <ComboBoxItem Padding="2" Content="Hidden"/>
+                                </ComboBox>
+                                
+                                <Label Grid.Row="2" Grid.Column="0" Margin="0,0,10,0" Content="Disabled" HorizontalAlignment="Right"/>
+                                <ComboBox Grid.Row="2" Grid.Column="1" Text="ComboBox" Width="130" Margin="5" IsEnabled="False" HorizontalAlignment="Center">
                                     <ComboBoxItem Padding="2" IsSelected="True" Content="Visible"/>
                                     <ComboBoxItem Padding="2" Content="Hidden"/>
                                 </ComboBox>
 
-                                <ComboBox Text="ComboBox" Width="130" Margin="5" IsEnabled="False" HorizontalAlignment="Center">
+                                <Label Grid.Row="3" Grid.Column="0" Margin="0,0,10,0" Content="Editable Disabled" HorizontalAlignment="Right"/>
+                                <ComboBox  Grid.Row="3" Grid.Column="1" Text="ComboBox" Width="130" Margin="5" IsEditable="True" IsEnabled="False" HorizontalAlignment="Center">
                                     <ComboBoxItem Padding="2" IsSelected="True" Content="Visible"/>
                                     <ComboBoxItem Padding="2" Content="Hidden"/>
                                 </ComboBox>
-
-                                <ComboBox Text="ComboBox" Width="130" Margin="5" IsEditable="True" IsEnabled="False" HorizontalAlignment="Center">
-                                    <ComboBoxItem Padding="2" IsSelected="True" Content="Visible"/>
-                                    <ComboBoxItem Padding="2" Content="Hidden"/>
-                                </ComboBox>
-                            </StackPanel>
+                            </Grid>
                         </Expander>
                         <Expander Header="Label">
                             <Grid HorizontalAlignment="Center">
                                 <Grid.RowDefinitions>
-                                    <RowDefinition Height="25"/>
-                                    <RowDefinition Height="25"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
                                     <RowDefinition Height="25"/>
                                 </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
@@ -729,8 +758,8 @@
                         <Expander Header="RadioButton">
                             <Grid HorizontalAlignment="Center">
                                 <Grid.RowDefinitions>
-                                    <RowDefinition Height="25"/>
-                                    <RowDefinition Height="25"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
                                     <RowDefinition Height="25"/>
                                 </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
@@ -747,8 +776,8 @@
                         <Expander Header="TextBox">
                             <Grid HorizontalAlignment="Center">
                                 <Grid.RowDefinitions>
-                                    <RowDefinition Height="25"/>
-                                    <RowDefinition Height="25"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
                                     <RowDefinition Height="25"/>
                                 </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
@@ -765,8 +794,8 @@
                         <Expander Header="ToggleButton">
                             <Grid HorizontalAlignment="Center">
                                 <Grid.RowDefinitions>
-                                    <RowDefinition Height="25"/>
-                                    <RowDefinition Height="25"/>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
                                     <RowDefinition Height="25"/>
                                 </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
