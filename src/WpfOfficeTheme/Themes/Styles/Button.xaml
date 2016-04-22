@@ -54,15 +54,10 @@
         </Setter>
     </Style>
 
-    <Style x:Key="AccentButton" TargetType="{x:Type Button}">
-        <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+    <Style x:Key="AccentButton" TargetType="{x:Type Button}" BasedOn="{StaticResource {x:Type Button}}">
         <Setter Property="Background" Value="{StaticResource AccentNormalBrush}"/>
         <Setter Property="BorderBrush" Value="{StaticResource AccentNormalBrush}"/>
         <Setter Property="Foreground" Value="{StaticResource ForegroundBrushLight}"/>
-        <Setter Property="BorderThickness" Value="1"/>
-        <Setter Property="HorizontalContentAlignment" Value="Center"/>
-        <Setter Property="VerticalContentAlignment" Value="Center"/>
-        <Setter Property="Padding" Value="1"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Button}">

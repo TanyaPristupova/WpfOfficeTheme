@@ -132,6 +132,19 @@
                                         <ToggleButton Margin="5 2" Padding="4 2" Width="100" Content="Disabled"
                                                       IsEnabled="False" HorizontalAlignment="Left"/>
                                     </StackPanel>
+                                    <StackPanel MinWidth="200">
+                                        <Label Content="Accent Toggle Button"
+                                               Margin="5" Style="{StaticResource Header20}"/>
+                                        <ToggleButton Margin="5 2" Padding="4 2" Width="100"
+                                                      Style="{StaticResource AccentToggleButton}"
+                                                      Content="Enabled" HorizontalAlignment="Left"/>
+                                        <ToggleButton Margin="5 2" Padding="4 2" Width="100" Content="Checked"
+                                                      Style="{StaticResource AccentToggleButton}"
+                                                      IsChecked="True" HorizontalAlignment="Left"/>
+                                        <ToggleButton Margin="5 2" Padding="4 2" Width="100" Content="Disabled"
+                                                      Style="{StaticResource AccentToggleButton}"
+                                                      IsEnabled="False" HorizontalAlignment="Left"/>
+                                    </StackPanel>
                                 </StackPanel>
                             </GroupBox>
                             <GroupBox Header="Radio Button" Style="{StaticResource ExampleGroupBoxStyle}">
