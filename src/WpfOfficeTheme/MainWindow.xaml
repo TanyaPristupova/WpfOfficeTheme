@@ -315,8 +315,10 @@
                                         <Label Content="Accent Text Box"
                                                Margin="5" Style="{StaticResource Header20}"/>
                                         <TextBox Margin="5 2" Width="150" HorizontalAlignment="Left"
+                                                 Style="{StaticResource AccentTextBox}"
                                                  Text="Default" Padding="4 2"/>
                                         <TextBox Margin="5 2" Width="150" HorizontalAlignment="Left"
+                                                 Style="{StaticResource AccentTextBox}"
                                                  Text="Disabled" Padding="4 2" IsEnabled="False"/>
                                     </StackPanel>
                                 </StackPanel>
