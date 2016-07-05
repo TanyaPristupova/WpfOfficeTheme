@@ -9,6 +9,10 @@
     
     <Style TargetType="{x:Type CheckBox}">
         <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
+        <Setter Property="Margin" Value="4 2"/>
+        <Setter Property="Height" Value="22"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="HorizontalContentAlignment" Value="Left"/>
         <Setter Property="Background" Value="{StaticResource CheckBox.Static.Background}"/>
         <Setter Property="BorderBrush" Value="{StaticResource CheckBox.Static.Border}"/>
         <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}"/>
@@ -18,8 +22,7 @@
                 <ControlTemplate TargetType="{x:Type CheckBox}">
                     <Grid x:Name="templateRoot"
                           Background="Transparent"
-                          SnapsToDevicePixels="True"
-                          Margin="{TemplateBinding Margin}">
+                          SnapsToDevicePixels="True">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="Auto"/>
                             <ColumnDefinition Width="*"/>
@@ -98,8 +101,7 @@
                 <ControlTemplate TargetType="{x:Type CheckBox}">
                     <Grid x:Name="templateRoot"
                           Background="Transparent"
-                          SnapsToDevicePixels="True"
-                          Margin="{TemplateBinding Margin}">
+                          SnapsToDevicePixels="True">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="Auto"/>
                             <ColumnDefinition Width="*"/>

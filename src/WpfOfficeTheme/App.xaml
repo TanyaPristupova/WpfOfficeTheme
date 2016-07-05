@@ -8,7 +8,7 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/Styles/Generic.xaml"/>
             </ResourceDictionary.MergedDictionaries>
-            <SolidColorBrush x:Key="AccentColorBrush" Color="SeaGreen" />
+            <SolidColorBrush x:Key="AccentColorBrush" Color="RoyalBlue" />
         </ResourceDictionary>
     </Application.Resources>
 </Application>

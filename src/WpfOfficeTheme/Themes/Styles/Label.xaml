@@ -9,7 +9,7 @@
         <Setter Property="Background" Value="Transparent"/>
         <Setter Property="Padding" Value="5"/>
         <Setter Property="HorizontalContentAlignment" Value="Left"/>
-        <Setter Property="VerticalContentAlignment" Value="Top"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Label}">
@@ -33,35 +33,35 @@
         </Setter>
     </Style>
     
-    <Style x:Key="AccentHeader40" TargetType="{x:Type Label}" BasedOn="{StaticResource {x:Type Label}}">
+    <Style x:Key="Label.AccentHeader40" TargetType="{x:Type Label}" BasedOn="{StaticResource {x:Type Label}}">
         <Setter Property="Foreground" Value="{StaticResource AccentForegroundBrush}" />
         <Setter Property="FontSize" Value="40" />
         <Setter Property="FontWeight" Value="Light" />
     </Style>
 
-    <Style x:Key="AccentHeader30" TargetType="{x:Type Label}" BasedOn="{StaticResource {x:Type Label}}">
+    <Style x:Key="Label.AccentHeader30" TargetType="{x:Type Label}" BasedOn="{StaticResource {x:Type Label}}">
         <Setter Property="Foreground" Value="{StaticResource AccentForegroundBrush}" />
         <Setter Property="FontSize" Value="30" />
         <Setter Property="FontWeight" Value="Light" />
     </Style>
 
-    <Style x:Key="AccentHeader20" TargetType="{x:Type Label}" BasedOn="{StaticResource {x:Type Label}}">
+    <Style x:Key="Label.AccentHeader20" TargetType="{x:Type Label}" BasedOn="{StaticResource {x:Type Label}}">
         <Setter Property="Foreground" Value="{StaticResource AccentForegroundBrush}" />
         <Setter Property="FontSize" Value="20" />
         <Setter Property="FontWeight" Value="Light" />
     </Style>
 
-    <Style x:Key="Header40" TargetType="{x:Type Label}" BasedOn="{StaticResource {x:Type Label}}">
+    <Style x:Key="Label.Header40" TargetType="{x:Type Label}" BasedOn="{StaticResource {x:Type Label}}">
         <Setter Property="FontSize" Value="40" />
         <Setter Property="FontWeight" Value="Light" />
     </Style>
-    
-    <Style x:Key="Header30" TargetType="{x:Type Label}" BasedOn="{StaticResource {x:Type Label}}">
+
+    <Style x:Key="Label.Header30" TargetType="{x:Type Label}" BasedOn="{StaticResource {x:Type Label}}">
         <Setter Property="FontSize" Value="30" />
         <Setter Property="FontWeight" Value="Light" />
     </Style>
-    
-    <Style x:Key="Header20" TargetType="{x:Type Label}" BasedOn="{StaticResource {x:Type Label}}">
+
+    <Style x:Key="Label.Header20" TargetType="{x:Type Label}" BasedOn="{StaticResource {x:Type Label}}">
         <Setter Property="FontSize" Value="20" />
         <Setter Property="FontWeight" Value="Light" />
     </Style>

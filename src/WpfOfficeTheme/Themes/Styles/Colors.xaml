@@ -26,6 +26,9 @@
     <SolidColorBrush x:Key="AccentDarkBrush" Color="{DynamicResource Pressed.BorderColorDark}"/>
     <SolidColorBrush x:Key="AccentLightBrush" Color="{DynamicResource AccentColor1}"/>
     
+    <!--Separator-->
+    <SolidColorBrush x:Key="SeparatorBrush">#c2c2c2</SolidColorBrush>
+    
     <!--FontStyle-->
     <Style TargetType="{x:Type Control}">
         <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}"/>

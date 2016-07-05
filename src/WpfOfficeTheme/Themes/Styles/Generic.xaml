@@ -15,9 +15,11 @@
         <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/Styles/RadioButton.xaml" />
         <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/Styles/ScrollViewer.xaml" />
         <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/Styles/TabControl.xaml" />
+        <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/Styles/TextBlock.xaml" />
         <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/Styles/TextBox.xaml" />
         <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/Styles/ToggleButton.xaml" />
         <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/Styles/TreeView.xaml" />
         <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/Styles/GroupBox.xaml" />
+        <ResourceDictionary Source="/WpfOfficeTheme;component/Themes/Styles/Separator.xaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>
