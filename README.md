@@ -50,7 +50,7 @@ public override void OnApplyTemplate()
 That's it.
 
 ####How to change the accent color
-#####Replace the accent color with the color you prefer in App.xaml
+Replace the accent color with the color you prefer in App.xaml
 ```
 <SolidColorBrush x:Key="AccentColorBrush" Color="RoyalBlue" />
 ```
