@@ -429,9 +429,9 @@
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ToggleButton}">
                     <Border x:Name="templateRoot"
-                            BorderBrush="{DynamicResource AccentNormalBrush}"
+                            BorderBrush="{DynamicResource Accent.BackgroundBrush}"
                             BorderThickness="{TemplateBinding BorderThickness}"
-                            Background="{DynamicResource AccentNormalBrush}"
+                            Background="{DynamicResource Accent.BackgroundBrush}"
                             SnapsToDevicePixels="true">
                         <Border x:Name="splitBorder"
                                 BorderBrush="Transparent"
@@ -442,7 +442,7 @@
                                 Width="14">
                             <Path x:Name="arrow"
                                   Data="{StaticResource Arrow}"
-                                  Fill="{StaticResource ForegroundBrushLight}"
+                                  Fill="{StaticResource ForegroundBrush.Light}"
                                   HorizontalAlignment="Center"
                                   Margin="0"
                                   VerticalAlignment="Center"/>
@@ -457,20 +457,20 @@
                                 <Condition Binding="{Binding IsEnabled, RelativeSource={RelativeSource Self}}" Value="true"/>
                             </MultiDataTrigger.Conditions>
                             <Setter Property="Background" TargetName="templateRoot" Value="{StaticResource ComboBox.Static.Editable.Background}"/>
-                            <Setter Property="BorderBrush" TargetName="templateRoot" Value="{StaticResource AccentNormalBrush}"/>
-                            <Setter Property="Background" TargetName="splitBorder" Value="{StaticResource AccentNormalBrush}"/>
-                            <Setter Property="BorderBrush" TargetName="splitBorder" Value="{StaticResource AccentNormalBrush}"/>
+                            <Setter Property="BorderBrush" TargetName="templateRoot" Value="{StaticResource Accent.BackgroundBrush}"/>
+                            <Setter Property="Background" TargetName="splitBorder" Value="{StaticResource Accent.BackgroundBrush}"/>
+                            <Setter Property="BorderBrush" TargetName="splitBorder" Value="{StaticResource Accent.BackgroundBrush}"/>
                         </MultiDataTrigger>
                         <Trigger Property="IsMouseOver" Value="true">
-                            <Setter Property="Fill" TargetName="arrow" Value="{StaticResource ForegroundBrushLight}"/>
+                            <Setter Property="Fill" TargetName="arrow" Value="{StaticResource ForegroundBrush.Light}"/>
                         </Trigger>
                         <MultiDataTrigger>
                             <MultiDataTrigger.Conditions>
                                 <Condition Binding="{Binding IsMouseOver, RelativeSource={RelativeSource Self}}" Value="true"/>
                                 <Condition Binding="{Binding IsEditable, RelativeSource={RelativeSource AncestorType={x:Type ComboBox}}}" Value="false"/>
                             </MultiDataTrigger.Conditions>
-                            <Setter Property="Background" TargetName="templateRoot" Value="{StaticResource AccentLightBrush}"/>
-                            <Setter Property="BorderBrush" TargetName="templateRoot" Value="{StaticResource AccentLightBrush}"/>
+                            <Setter Property="Background" TargetName="templateRoot" Value="{StaticResource Accent.LightBrush}"/>
+                            <Setter Property="BorderBrush" TargetName="templateRoot" Value="{StaticResource Accent.LightBrush}"/>
                         </MultiDataTrigger>
                         <MultiDataTrigger>
                             <MultiDataTrigger.Conditions>
@@ -478,17 +478,17 @@
                                 <Condition Binding="{Binding IsEditable, RelativeSource={RelativeSource AncestorType={x:Type ComboBox}}}" Value="true"/>
                             </MultiDataTrigger.Conditions>
                             <Setter Property="Background" TargetName="templateRoot" Value="{StaticResource ComboBox.MouseOver.Editable.Background}"/>
-                            <Setter Property="BorderBrush" TargetName="templateRoot" Value="{StaticResource AccentLightBrush}"/>
-                            <Setter Property="Background" TargetName="splitBorder" Value="{StaticResource AccentLightBrush}"/>
-                            <Setter Property="BorderBrush" TargetName="splitBorder" Value="{StaticResource AccentLightBrush}"/>
+                            <Setter Property="BorderBrush" TargetName="templateRoot" Value="{StaticResource Accent.LightBrush}"/>
+                            <Setter Property="Background" TargetName="splitBorder" Value="{StaticResource Accent.LightBrush}"/>
+                            <Setter Property="BorderBrush" TargetName="splitBorder" Value="{StaticResource Accent.LightBrush}"/>
                         </MultiDataTrigger>
                         <MultiDataTrigger>
                             <MultiDataTrigger.Conditions>
                                 <Condition Binding="{Binding IsPressed, RelativeSource={RelativeSource Self}}" Value="true"/>
                                 <Condition Binding="{Binding IsEditable, RelativeSource={RelativeSource AncestorType={x:Type ComboBox}}}" Value="false"/>
                             </MultiDataTrigger.Conditions>
-                            <Setter Property="Background" TargetName="templateRoot" Value="{StaticResource AccentDarkBrush}"/>
-                            <Setter Property="BorderBrush" TargetName="templateRoot" Value="{StaticResource AccentDarkBrush}"/>
+                            <Setter Property="Background" TargetName="templateRoot" Value="{StaticResource Accent.DarkBrush}"/>
+                            <Setter Property="BorderBrush" TargetName="templateRoot" Value="{StaticResource Accent.DarkBrush}"/>
                         </MultiDataTrigger>
                         <MultiDataTrigger>
                             <MultiDataTrigger.Conditions>
@@ -496,9 +496,9 @@
                                 <Condition Binding="{Binding IsEditable, RelativeSource={RelativeSource AncestorType={x:Type ComboBox}}}" Value="true"/>
                             </MultiDataTrigger.Conditions>
                             <Setter Property="Background" TargetName="templateRoot" Value="{StaticResource ComboBox.Pressed.Editable.Background}"/>
-                            <Setter Property="BorderBrush" TargetName="templateRoot" Value="{StaticResource AccentDarkBrush}"/>
-                            <Setter Property="Background" TargetName="splitBorder" Value="{StaticResource AccentDarkBrush}"/>
-                            <Setter Property="BorderBrush" TargetName="splitBorder" Value="{StaticResource AccentDarkBrush}"/>
+                            <Setter Property="BorderBrush" TargetName="templateRoot" Value="{StaticResource Accent.DarkBrush}"/>
+                            <Setter Property="Background" TargetName="splitBorder" Value="{StaticResource Accent.DarkBrush}"/>
+                            <Setter Property="BorderBrush" TargetName="splitBorder" Value="{StaticResource Accent.DarkBrush}"/>
                         </MultiDataTrigger>
                         <Trigger Property="IsEnabled" Value="false">
                             <Setter Property="Fill" TargetName="arrow" Value="{StaticResource ComboBox.Disabled.Glyph}"/>
@@ -586,7 +586,7 @@
                               Margin="{TemplateBinding Padding}"
                               SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
                               VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
-                              TextElement.Foreground="{StaticResource ForegroundBrushLight}"/>
+                              TextElement.Foreground="{StaticResource ForegroundBrush.Light}"/>
         </Grid>
         <ControlTemplate.Triggers>
             <Trigger Property="HasDropShadow" SourceName="PART_Popup" Value="true">
@@ -701,7 +701,7 @@
     </ControlTemplate>
 
     <Style x:Key="AccentComboBox" TargetType="{x:Type ComboBox}" BasedOn="{StaticResource {x:Type ComboBox}}">
-        <Setter Property="BorderBrush" Value="{StaticResource AccentNormalBrush}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource Accent.BackgroundBrush}"/>
         <Setter Property="Template" Value="{StaticResource AccentComboBoxTemplate}"/>
         <Style.Triggers>
             <Trigger Property="IsEditable" Value="true">

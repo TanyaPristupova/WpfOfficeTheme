@@ -3,11 +3,11 @@
     <!--Common colors-->
     <Color x:Key="GlyphColor">#777777</Color>
     <Color x:Key="ForegroundColor">#444444</Color>
-    <Color x:Key="ForegroundColorLight">#FFFFFF</Color>
+    <Color x:Key="ForegroundColor.Light">#FFFFFF</Color>
     <Color x:Key="BackgroundColor">#FFFFFF</Color>
-    <Color x:Key="BackgroundColorDark">#F0F0F0</Color>
+    <Color x:Key="BackgroundColor.Dark">#F0F0F0</Color>
     <Color x:Key="BorderColor">#D4D4D4</Color>
-    <Color x:Key="BorderColorLight">#F0F0F0</Color>
+    <Color x:Key="BorderColor.Light">#F0F0F0</Color>
     <Color x:Key="Disabled.BackgroundColor">#FFF4F4F4</Color>
     <Color x:Key="Disabled.BackgroundColorLight">#FFFFFF</Color>
     <Color x:Key="Disabled.BorderColor">#FFBCBCBC</Color>
@@ -15,16 +15,16 @@
     <Color x:Key="Disabled.GlyphColor">#C6C6C6</Color>
 
     <SolidColorBrush x:Key="ForegroundBrush" Color="{StaticResource ForegroundColor}"/>
-    <SolidColorBrush x:Key="ForegroundBrushLight" Color="{StaticResource ForegroundColorLight}"/>
+    <SolidColorBrush x:Key="ForegroundBrush.Light" Color="{StaticResource ForegroundColor.Light}"/>
     <SolidColorBrush x:Key="BorderBrush" Color="{StaticResource BorderColor}"/>
     <SolidColorBrush x:Key="BackgroundBrush" Color="{StaticResource BackgroundColor}"/>
-    <SolidColorBrush x:Key="BackgroundBrushDark" Color="{StaticResource BackgroundColorDark}"/>
+    <SolidColorBrush x:Key="BackgroundBrush.Dark" Color="{StaticResource BackgroundColor.Dark}"/>
     <SolidColorBrush x:Key="MouseOver.BackgroundBrush" Color="{DynamicResource MouseOver.BackgroundColor}"/>
     <SolidColorBrush x:Key="Disabled.ForegroundBrush" Color="{StaticResource Disabled.ForegroundColor}"/>
-    <SolidColorBrush x:Key="AccentForegroundBrush" Color="{DynamicResource AccentColor1}"/>
-    <SolidColorBrush x:Key="AccentNormalBrush" Color="{DynamicResource AccentColor}"/>
-    <SolidColorBrush x:Key="AccentDarkBrush" Color="{DynamicResource Pressed.BorderColorDark}"/>
-    <SolidColorBrush x:Key="AccentLightBrush" Color="{DynamicResource AccentColor1}"/>
+    <SolidColorBrush x:Key="Accent.ForegroundBrush" Color="{DynamicResource AccentColor1}"/>
+    <SolidColorBrush x:Key="Accent.BackgroundBrush" Color="{DynamicResource AccentColor}"/>
+    <SolidColorBrush x:Key="Accent.DarkBrush" Color="{DynamicResource Pressed.BorderColorDark}"/>
+    <SolidColorBrush x:Key="Accent.LightBrush" Color="{DynamicResource AccentColor1}"/>
     
     <!--Separator-->
     <SolidColorBrush x:Key="SeparatorBrush">#c2c2c2</SolidColorBrush>
@@ -42,7 +42,6 @@
     </Style>
 
     <!--Button-->
-
     <SolidColorBrush x:Key="Button.Static.Background" Color="{StaticResource BackgroundColor}"/>
     <SolidColorBrush x:Key="Button.Static.Border" Color="{StaticResource BorderColor}"/>
     <SolidColorBrush x:Key="Button.MouseOver.Background" Color="{DynamicResource MouseOver.BackgroundColor}"/>
@@ -131,9 +130,9 @@
     <!--ListView-->
     
     <!--Menu-->
-    <SolidColorBrush x:Key="Menu.Static.Background" Color="{StaticResource BackgroundColorDark}"/>
+    <SolidColorBrush x:Key="Menu.Static.Background" Color="{StaticResource BackgroundColor.Dark}"/>
     <SolidColorBrush x:Key="Menu.Static.Foreground" Color="{StaticResource ForegroundColor}"/>
-    <SolidColorBrush x:Key="Menu.Static.Border" Color="{StaticResource BackgroundColorDark}"/>
+    <SolidColorBrush x:Key="Menu.Static.Border" Color="{StaticResource BackgroundColor.Dark}"/>
     <SolidColorBrush x:Key="Menu.MenuItem.Static.Border" Color="{StaticResource BorderColor}"/>
     <SolidColorBrush x:Key="Menu.MenuItem.Static.Background" Color="{StaticResource BackgroundColor}"/>
     <SolidColorBrush x:Key="Menu.MenuItem.MouseOver.Background" Color="{DynamicResource MouseOver.BackgroundColor}"/>
@@ -141,7 +140,7 @@
     <SolidColorBrush x:Key="Menu.MenuItem.Disabled.Foreground" Color="{StaticResource Disabled.ForegroundColor}"/>
     <SolidColorBrush x:Key="MenuTextBrushKey" Color="{StaticResource ForegroundColor}"/>
     <!--MenuSeparator-->
-    <SolidColorBrush x:Key="Menu.Static.Separator" Color="{StaticResource BorderColorLight}"/>
+    <SolidColorBrush x:Key="Menu.Static.Separator" Color="{StaticResource BorderColor.Light}"/>
     
     <!--TabControl-->
     <!--TabItem-->
@@ -180,8 +179,8 @@
     <SolidColorBrush x:Key="TreeViewItem.TreeArrow.Static.Stroke" Color="{StaticResource GlyphColor}"/>
 
     <!--Expander-->
-    <SolidColorBrush x:Key="Expander.MouseOver.Arrow.Stroke" Color="{DynamicResource MouseOver.BorderColor}"/>
-    <SolidColorBrush x:Key="Expander.Pressed.Arrow.Stroke" Color="{DynamicResource Pressed.BorderColor}"/>
+    <SolidColorBrush x:Key="Expander.MouseOver.Arrow.Stroke" Color="{DynamicResource AccentColor1}"/>
+    <SolidColorBrush x:Key="Expander.Pressed.Arrow.Stroke" Color="{DynamicResource Pressed.BorderColorDark}"/>
     <SolidColorBrush x:Key="Expander.Disabled.Arrow.Stroke" Color="{StaticResource Disabled.ForegroundColor}"/>
     <SolidColorBrush x:Key="Expander.Static.Arrow.Stroke" Color="{StaticResource GlyphColor}"/>
     
@@ -208,9 +207,9 @@
     <SolidColorBrush x:Key="ScrollBar.Disabled.Glyph" Color="{StaticResource Disabled.GlyphColor}"/>
     <SolidColorBrush x:Key="ScrollBar.Static.Thumb" Color="{StaticResource BackgroundColor}"/>
     <SolidColorBrush x:Key="ScrollBar.Static.Thumb.Border" Color="{StaticResource BorderColor}"/>
-    <SolidColorBrush x:Key="ScrollBar.MouseOver.Thumb" Color="{StaticResource BackgroundColorDark}"/>
+    <SolidColorBrush x:Key="ScrollBar.MouseOver.Thumb" Color="{StaticResource BackgroundColor.Dark}"/>
     <SolidColorBrush x:Key="ScrollBar.Pressed.Thumb.Border" Color="{StaticResource ScrollBar.BorderColorDark}"/>
-    <SolidColorBrush x:Key="ScrollBar.Pressed.Thumb" Color="{StaticResource BackgroundColorDark}"/>
+    <SolidColorBrush x:Key="ScrollBar.Pressed.Thumb" Color="{StaticResource BackgroundColor.Dark}"/>
     
     <!--DataGrid-->
     <Color x:Key="DataGrid.GridLinesColor">#E9E9E9</Color>
@@ -218,7 +217,7 @@
     <Color x:Key="DataGrid.SelectAllButton.MouseOverColor">#E9E9E9</Color>
     
     <SolidColorBrush x:Key="DataGrid.BackgroundBrush" Color="{StaticResource BackgroundColor}"/>
-    <SolidColorBrush x:Key="DataGrid.Header.Background" Color="{StaticResource BackgroundColorDark}"/>
+    <SolidColorBrush x:Key="DataGrid.Header.Background" Color="{StaticResource BackgroundColor.Dark}"/>
     <SolidColorBrush x:Key="DataGrid.Header.Border" Color="{StaticResource DataGrid.GridLinesColor}"/>
     <SolidColorBrush x:Key="DataGrid.Header.MouseOver.Background" Color="{DynamicResource MouseOver.BackgroundColor}"/>
     <SolidColorBrush x:Key="DataGrid.Header.Selected.Background" Color="{DynamicResource Pressed.BackgroundColor}"/>

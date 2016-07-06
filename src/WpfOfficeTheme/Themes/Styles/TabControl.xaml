@@ -45,7 +45,7 @@
                                 <Condition Binding="{Binding IsSelected, RelativeSource={RelativeSource Self}}" Value="True"/>
                                 <Condition Binding="{Binding IsEnabled, RelativeSource={RelativeSource AncestorType={x:Type TabControl}}}" Value="True"/>
                             </MultiDataTrigger.Conditions>
-                            <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="{StaticResource AccentNormalBrush}"/>
+                            <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="{StaticResource Accent.BackgroundBrush}"/>
                             <Setter Property="TextElement.FontWeight" TargetName="contentPresenter" Value="Medium"/>
                         </MultiDataTrigger>
                         <MultiDataTrigger>
@@ -297,7 +297,7 @@
     <Style x:Key="AccentTabItem" TargetType="{x:Type TabItem}">
         <Setter Property="FocusVisualStyle" Value="{StaticResource FocusVisual}"/>
         <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}"/>
-        <Setter Property="Background" Value="{StaticResource AccentNormalBrush}"/>
+        <Setter Property="Background" Value="{StaticResource Accent.BackgroundBrush}"/>
         <Setter Property="BorderBrush" Value="{StaticResource TabItem.Static.Border}"/>
         <Setter Property="Margin" Value="0"/>
         <Setter Property="Padding" Value="6,4,6,4"/>
@@ -326,7 +326,7 @@
                                           RecognizesAccessKey="True"
                                           SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
                                           VerticalAlignment="{Binding VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"
-                                          TextBlock.Foreground="{StaticResource ForegroundBrushLight}"/>
+                                          TextBlock.Foreground="{StaticResource ForegroundBrush.Light}"/>
                     </Grid>
                     <ControlTemplate.Triggers>
                         <MultiDataTrigger>
@@ -334,13 +334,13 @@
                                 <Condition Binding="{Binding IsMouseOver, RelativeSource={RelativeSource Self}}" Value="True"/>
                                 <Condition Binding="{Binding IsEnabled, RelativeSource={RelativeSource AncestorType={x:Type TabControl}}}" Value="True"/>
                             </MultiDataTrigger.Conditions>
-                            <Setter Property="Background" Value="{StaticResource AccentDarkBrush}"/>
+                            <Setter Property="Background" Value="{StaticResource Accent.DarkBrush}"/>
                         </MultiDataTrigger><MultiDataTrigger>
                             <MultiDataTrigger.Conditions>
                                 <Condition Binding="{Binding IsSelected, RelativeSource={RelativeSource Self}}" Value="True"/>
                                 <Condition Binding="{Binding IsEnabled, RelativeSource={RelativeSource AncestorType={x:Type TabControl}}}" Value="True"/>
                             </MultiDataTrigger.Conditions>
-                            <Setter Property="Background" Value="{StaticResource AccentLightBrush}"/>
+                            <Setter Property="Background" Value="{StaticResource Accent.LightBrush}"/>
                         </MultiDataTrigger>
                         <Trigger Property="IsEnabled" Value="False">
                             <Setter Property="Background" Value="{StaticResource TabItem.Disabled.Background}"/>
@@ -354,7 +354,7 @@
     <Style x:Key="AccentTabControl" TargetType="{x:Type TabControl}" BasedOn="{StaticResource {x:Type TabControl}}">
         <Style.Resources>
             <Style TargetType="{x:Type TabPanel}">
-                <Setter Property="Background" Value="{StaticResource AccentNormalBrush}"/>
+                <Setter Property="Background" Value="{StaticResource Accent.BackgroundBrush}"/>
                 <Setter Property="MinWidth" Value="100"/>
             </Style>
             <Style TargetType="{x:Type TabItem}" BasedOn="{StaticResource AccentTabItem}"/>

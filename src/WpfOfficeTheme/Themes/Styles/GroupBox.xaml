@@ -76,8 +76,8 @@
     </Style>
     
     <Style x:Key="AccentGroupBox" TargetType="{x:Type GroupBox}">
-        <Setter Property="Background" Value="{StaticResource AccentLightBrush}"/>
-        <Setter Property="Foreground" Value="{StaticResource ForegroundBrushLight}"/>
+        <Setter Property="Background" Value="{StaticResource Accent.LightBrush}"/>
+        <Setter Property="Foreground" Value="{StaticResource ForegroundBrush.Light}"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type GroupBox}">
@@ -108,7 +108,7 @@
     </Style>
 
     <Style x:Key="GrayGroupBox" TargetType="{x:Type GroupBox}" BasedOn="{StaticResource AccentGroupBox}">
-        <Setter Property="Background" Value="{StaticResource BackgroundBrushDark}"/>
+        <Setter Property="Background" Value="{StaticResource BackgroundBrush.Dark}"/>
         <Setter Property="Foreground" Value="{StaticResource ForegroundBrush}"/>
     </Style>
 </ResourceDictionary>

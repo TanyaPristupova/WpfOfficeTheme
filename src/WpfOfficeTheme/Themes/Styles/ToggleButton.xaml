@@ -68,9 +68,9 @@
     </Style>
 
     <Style x:Key="AccentToggleButton" TargetType="{x:Type ToggleButton}" BasedOn="{StaticResource {x:Type ToggleButton}}">
-        <Setter Property="Background" Value="{StaticResource AccentNormalBrush}"/>
-        <Setter Property="BorderBrush" Value="{StaticResource AccentNormalBrush}"/>
-        <Setter Property="Foreground" Value="{StaticResource ForegroundBrushLight}"/>
+        <Setter Property="Background" Value="{StaticResource Accent.BackgroundBrush}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource Accent.BackgroundBrush}"/>
+        <Setter Property="Foreground" Value="{StaticResource ForegroundBrush.Light}"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ToggleButton}">
@@ -92,24 +92,24 @@
                             <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
                         </Trigger>
                         <Trigger Property="IsMouseOver" Value="true">
-                            <Setter Property="Background" TargetName="border" Value="{StaticResource AccentLightBrush}"/>
-                            <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource AccentLightBrush}"/>
+                            <Setter Property="Background" TargetName="border" Value="{StaticResource Accent.LightBrush}"/>
+                            <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Accent.LightBrush}"/>
                         </Trigger>
                         <Trigger Property="IsPressed" Value="true">
-                            <Setter Property="Background" TargetName="border" Value="{StaticResource AccentDarkBrush}"/>
-                            <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource AccentDarkBrush}"/>
+                            <Setter Property="Background" TargetName="border" Value="{StaticResource Accent.DarkBrush}"/>
+                            <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Accent.DarkBrush}"/>
                         </Trigger>
                         <Trigger Property="IsChecked" Value="true">
-                            <Setter Property="Background" TargetName="border" Value="{StaticResource AccentDarkBrush}"/>
-                            <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource AccentDarkBrush}"/>
+                            <Setter Property="Background" TargetName="border" Value="{StaticResource Accent.DarkBrush}"/>
+                            <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Accent.DarkBrush}"/>
                         </Trigger>
                         <MultiTrigger>
                             <MultiTrigger.Conditions>
                                 <Condition Property="IsChecked" Value="true"/>
                                 <Condition Property="IsMouseOver" Value="true"/>
                             </MultiTrigger.Conditions>
-                            <Setter Property="Background" TargetName="border" Value="{StaticResource AccentLightBrush}"/>
-                            <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource AccentLightBrush}"/>
+                            <Setter Property="Background" TargetName="border" Value="{StaticResource Accent.LightBrush}"/>
+                            <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource Accent.LightBrush}"/>
                         </MultiTrigger>
                         <Trigger Property="IsEnabled" Value="false">
                             <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Disabled.Background}"/>
