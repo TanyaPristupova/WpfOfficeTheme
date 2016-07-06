@@ -80,24 +80,30 @@
             <MenuItem Header="Help" IsEnabled="True" HorizontalAlignment="Right"/>
         </Menu>
 
-        <Grid Grid.Row="1" Grid.Column="0" HorizontalAlignment="Stretch" Background="{StaticResource AccentColorBrush}">
+        <Separator Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Top"
+                   Background="{StaticResource BorderBrush}" Margin="0"/>
+        
+        <Grid Grid.Row="1" Grid.Column="0" HorizontalAlignment="Stretch" Background="{StaticResource AccentColorBrush}" Margin="0 1 0 0">
             <TextBlock Text="WPF Office Theme" Style="{StaticResource Header20}" Foreground="White" Margin="10 8 0 8"/>
         </Grid>
 
-        <Grid Grid.Row="1" Grid.Column="1" Margin="6 0 0 6">
+        <Grid Grid.Row="1" Grid.Column="1" Margin="10 0 10 0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition />
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
-            <Button Width="60" HorizontalAlignment="Left" Content="Refresh" />
-            <Button Grid.Column="1" Width="60" HorizontalAlignment="Left" Content="Copy" />
+            <Button Width="60" HorizontalAlignment="Left" Content="Undo" />
+            <Button Grid.Column="1" Width="60" HorizontalAlignment="Left" Content="Redo" />
             <Button Grid.Column="2" Width="60" HorizontalAlignment="Right" Content="Edit" />
             <Button Grid.Column="3" Width="60" HorizontalAlignment="Right" Content="Save" />
         </Grid>
         
-        <TabControl Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" TabStripPlacement="Left" Margin="0"
+        <Separator Grid.Row="2" Grid.Column="0" Width="200" VerticalAlignment="Bottom"
+                   Background="{StaticResource BorderBrush}" Margin="0"/>
+        
+        <TabControl Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" TabStripPlacement="Left" Margin="0"
                     HorizontalContentAlignment="Left" Padding="0">
             <TabItem Header="Controls" Width="200" Padding="6">
                 <TabItem.Resources>
@@ -644,7 +650,7 @@
             
             <TabItem Header="DataGrid" Width="200" Padding="6">
                 <DataGrid x:Name="DataGrid" ItemsSource="{Binding Users}" RowHeight="22"
-                          RowHeaderWidth="20" HeadersVisibility="All"/>
+                          RowHeaderWidth="20" HeadersVisibility="All" Margin="10"/>
             </TabItem>
             
         </TabControl>

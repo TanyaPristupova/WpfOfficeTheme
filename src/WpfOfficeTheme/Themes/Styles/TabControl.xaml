@@ -45,7 +45,8 @@
                                 <Condition Binding="{Binding IsSelected, RelativeSource={RelativeSource Self}}" Value="True"/>
                                 <Condition Binding="{Binding IsEnabled, RelativeSource={RelativeSource AncestorType={x:Type TabControl}}}" Value="True"/>
                             </MultiDataTrigger.Conditions>
-                            <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="{StaticResource AccentForegroundBrush}"/>
+                            <Setter Property="TextElement.Foreground" TargetName="contentPresenter" Value="{StaticResource AccentNormalBrush}"/>
+                            <Setter Property="TextElement.FontWeight" TargetName="contentPresenter" Value="Medium"/>
                         </MultiDataTrigger>
                         <MultiDataTrigger>
                             <MultiDataTrigger.Conditions>
