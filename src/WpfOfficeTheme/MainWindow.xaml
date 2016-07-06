@@ -105,7 +105,7 @@
         
         <TabControl Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" TabStripPlacement="Left" Margin="0"
                     HorizontalContentAlignment="Left" Padding="0">
-            <TabItem Header="Controls" Width="200" Padding="6">
+            <TabItem Header="Controls" Width="200" Padding="10 8">
                 <TabItem.Resources>
                     <Style x:Key="ExampleGroupBoxStyle" TargetType="{x:Type GroupBox}" BasedOn="{StaticResource GrayGroupBox}">
                         <Setter Property="HorizontalContentAlignment" Value="Left"/>
@@ -495,7 +495,7 @@
                 </ScrollViewer>
             </TabItem>
             
-            <TabItem Header="Example" Width="200" Padding="6">
+            <TabItem Header="Example" Width="200" Padding="10 8">
                 <TabControl Margin="-1 0 -1 -1" Style="{StaticResource AccentTabControl}">
                     <TabItem Header="Settings" Padding="10 4">
                         <Grid>
@@ -648,7 +648,7 @@
                 </TabControl>
             </TabItem>
             
-            <TabItem Header="DataGrid" Width="200" Padding="6">
+            <TabItem Header="DataGrid" Width="200" Padding="10 8">
                 <DataGrid x:Name="DataGrid" ItemsSource="{Binding Users}" RowHeight="22"
                           RowHeaderWidth="20" HeadersVisibility="All" Margin="10"/>
             </TabItem>
