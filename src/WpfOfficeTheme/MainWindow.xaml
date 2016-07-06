@@ -519,11 +519,11 @@
                                     <ColumnDefinition Width="Auto"/>
                                 </Grid.ColumnDefinitions>
 
-                                <TextBlock Grid.Column="0" Text="Region:" HorizontalAlignment="Right" VerticalAlignment="Center" />
+                                <TextBlock Grid.Column="0" Text="Region:" Margin="10 4" HorizontalAlignment="Right" VerticalAlignment="Center" />
 
                                 <ComboBox Grid.Column="1" Width="200" HorizontalAlignment="Left" VerticalAlignment="Center">
-                                    <ComboBoxItem IsSelected="True" Content="Asia"/>
-                                    <ComboBoxItem Content="Europe"/>
+                                    <ComboBoxItem Content="Asia"/>
+                                    <ComboBoxItem Content="Europe" IsSelected="True" />
                                 </ComboBox>
 
                                 <Button Grid.Column="2" HorizontalAlignment="Left" Content="..." Width="22"/>
@@ -546,7 +546,7 @@
                                         <ColumnDefinition Width="Auto"/>
                                     </Grid.ColumnDefinitions>
 
-                                    <TextBlock Grid.Column="0" Text="First day of week:" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                                    <TextBlock Grid.Column="0" Text="First day of week:" Margin="10 4" HorizontalAlignment="Right" VerticalAlignment="Center"/>
                                     <ComboBox Grid.Column="1" Width="200" HorizontalAlignment="Left" VerticalAlignment="Center" >
                                         <ComboBoxItem Content="Monday" IsSelected="True"/>
                                         <ComboBoxItem Content="Sunday"/>
@@ -559,7 +559,7 @@
                                         <ColumnDefinition Width="Auto"/>
                                     </Grid.ColumnDefinitions>
 
-                                    <TextBlock Grid.Column="0" Text="Calendar:" HorizontalAlignment="Right" VerticalAlignment="Center" />
+                                    <TextBlock Grid.Column="0" Text="Calendar:" Margin="10 4" HorizontalAlignment="Right" VerticalAlignment="Center" />
                                     <ComboBox Grid.Column="1" Width="200" HorizontalAlignment="Left" VerticalAlignment="Center" >
                                         <ComboBoxItem Content="Gregorian" IsSelected="True"/>
                                     </ComboBox>
@@ -571,7 +571,7 @@
                                         <ColumnDefinition Width="Auto"/>
                                     </Grid.ColumnDefinitions>
 
-                                    <TextBlock Grid.Column="0" Text="Currency:" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                                    <TextBlock Grid.Column="0" Text="Currency:" Margin="10 4" HorizontalAlignment="Right" VerticalAlignment="Center"/>
                                     <ComboBox Grid.Column="1" Width="200" HorizontalAlignment="Left" VerticalAlignment="Center" >
                                         <ComboBoxItem Content="Euro" IsSelected="True"/>
                                         <ComboBoxItem Content="US Dollar" IsSelected="True"/>
@@ -584,9 +584,9 @@
                                         <ColumnDefinition Width="Auto"/>
                                     </Grid.ColumnDefinitions>
 
-                                    <TextBlock Grid.Column="0" Text="Decimal:" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                                    <TextBlock Grid.Column="0" Text="Decimal:" Margin="10 4" HorizontalAlignment="Right" VerticalAlignment="Center"/>
                                     <ComboBox Grid.Column="1" Width="100" HorizontalAlignment="Stretch" VerticalAlignment="Center">
-                                        <ComboBoxItem Content="."/>
+                                        <ComboBoxItem Content="." IsSelected="True"/>
                                         <ComboBoxItem Content=","/>
                                     </ComboBox>
                                 </Grid>
@@ -607,7 +607,7 @@
                                     <ColumnDefinition Width="Auto"/>
                                 </Grid.ColumnDefinitions>
 
-                                <TextBlock Grid.Row="0" Grid.Column="0" Text="Time format:" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                                <TextBlock Grid.Row="0" Grid.Column="0" Text="Time format:" Margin="10 4" HorizontalAlignment="Right" VerticalAlignment="Center"/>
                                 <CheckBox Grid.Row="0" Grid.Column="1" IsChecked="True" HorizontalAlignment="Left"
                                           VerticalAlignment="Center" Content="24-Hour Time" Style="{StaticResource AccentCheckBox}"/>
 
@@ -630,7 +630,7 @@
                                             <ComboBoxItem Content="Daily Backups" IsSelected="True"/>
                                             <ComboBoxItem Content="Weekly Backups" IsSelected="True"/>
                                         </ComboBox>
-                                        <TextBlock Text="to Folder" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                                        <TextBlock Text="to Folder" Margin="10 4" HorizontalAlignment="Right" VerticalAlignment="Center"/>
                                     </StackPanel>
 
                                     <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal">
